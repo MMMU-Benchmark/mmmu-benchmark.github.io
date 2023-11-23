@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Toggle Table</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+
+  <meta charset="utf-8">
+  <meta name="description"
+        content="A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI">
+  <meta name="keywords" content="MMMU, LMM, LMM Evaluation, Vision Language Model">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI </title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
+  <!-- <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+/Users/panlu/Library/Mobile Documents/com~apple~CloudDocs/ImageMath/visual-mathqa-server/data_final/images
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script> -->
+
+  <link rel="icon" href="./static/images/mmmu_icon2.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/leaderboard.css">
+
+  <!-- <link href="https://unpkg.com/tabulator-tables@5.5.2/dist/css/tabulator_bulma.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://unpkg.com/tabulator-tables@5.5.2/dist/js/tabulator.min.js"></script> -->
+  <script type="text/javascript" src="static/js/sort-table.js" defer></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/question_card.js"></script>
+  <script src="./data/results/data_setting.js" defer></script>
+  <script src="./data/results/model_scores.js" defer></script>
+  <script src="./visualizer/data/data_public.js" defer></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <!-- <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a> -->
+      <!-- @PAN TODO: consider adding links? -->
+      <!-- <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://chameleon-llm.github.io/">
+            <b>Chameleon</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
+          </a>
+          <a class="navbar-item" href="https://scienceqa.github.io/">
+            <b>ScienceQA</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
+          </a>
+          <a class="navbar-item" href="https://github.com/OpenGVLab/LLaMA-Adapter">
+            <b>LLaMA-Adapter (V2)</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
+          </a>
+          <a class="navbar-item" href="https://promptpg.github.io/">
+            PromptPG
+          </a>
+          <a class="navbar-item" href="https://arxiv.org/abs/2307.10635">
+            SciBench
+          </a>
+          <a class="navbar-item" href="https://arxiv.org/abs/2305.12524">
+            TheoremQA
+          </a>
+          <a class="navbar-item" href="https://lila.apps.allenai.org/">
+            Lila
+          </a>
+          <a class="navbar-item" href="https://iconqa.github.io/">
+            IconQA
+          </a>
+          <a class="navbar-item" href="https://lupantech.github.io/inter-gps/">
+            Inter-GPS
+          </a>
+        </div>
+      </div> -->
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title is-bold">
+            <img src="static/images/mmmu_icon2.png" style="width:1em;vertical-align: middle" alt="Logo"/> 
+            <span class="mmmu" style="vertical-align: middle">MMMU</span>
+            </h1>
+          <h2 class="subtitle is-3 publication-subtitle">
+            A Massive Multi-discipline Multimodal Understanding 
+            <!-- <br> -->
+            and Reasoning Benchmark for Expert AGI
+          </h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Xiang Yue*<sup style="color:#6fbf73;">1</sup>,</span>
+            <span class="author-block">Yuansheng Ni*<sup style="color:#ffac33;">2</sup>,</span>
+            <span class="author-block">Kai Zhang*<sup style="color:#ed4b82;">3</sup>,</span>
+            <span class="author-block">Tianyu Zheng*<sup style="color:#007bff;">4</sup>,</span><br>
+            <span class="author-block">Ruoqi Liu<sup style="color:#ed4b82;">3</sup>,</span>
+            <span class="author-block">Ge Zhang<sup style="color:#ffac33;">2</sup>,</span>
+            <span class="author-block">Samuel Stevens<sup style="color:#ed4b82;">3</sup>,</span>
+            <span class="author-block">Dongfu Jiang<sup style="color:#ffac33;">2</sup>,</span>
+            <span class="author-block">Weiming Ren<sup style="color:#ffac33;">2</sup>,</span>
+            <span class="author-block">Yuxuan Sun<sup style="color:#007bff;">4</sup>,</span>
+            <span class="author-block">Cong Wei<sup style="color:#ffac33;">2</sup>,</span>
+            <span class="author-block">Botao Yu<sup style="color:#ed4b82;">3</sup>,</span>
+            <span class="author-block">Ruibin Yuan<sup style="color:#ffac33;">5</sup>,</span>
+            <span class="author-block">Renliang Sun<sup style="color:#ffac33;">2</sup>,</span>
+            <span class="author-block">Ming Yin<sup style="color:#9b51e0;">7</sup>,</span>
+            <span class="author-block">Boyuan Zheng<sup style="color:#ed4b82;">3</sup>,</span>
+            <span class="author-block">Zhenzhu Yang<sup style="color:#007bff;">4</sup>,</span>
+            <span class="author-block">Yibo Liu<sup style="color:#ed4b82;">6</sup>,</span>
+            <span class="author-block">Wenhao Huang<sup style="color:#007bff;">4</sup>,</span><br>
+            <span class="author-block">Huan Sun*<sup style="color:#ed4b82;">3</sup>,</span>
+            <span class="author-block">Yu Su*<sup style="color:#ed4b82;">3</sup>,</span>
+            <span class="author-block">Wenhu Chen*<sup style="color:#ffac33;">2</sup></span>
+          </div>
+          
+          <br>
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup style="color:#6fbf73;">1</sup>IN.AI Research,</span>
+            <span class="author-block"><sup style="color:#ffac33;">2</sup>University of Waterloo,</span>
+            <span class="author-block"><sup style="color:#ed4b82;">3</sup>The Ohio State University,</span>
+            <span class="author-block"><sup style="color:#007bff;">4</sup>Independent,</span></br>
+            <span class="author-block"><sup style="color:#ffac33;">5</sup>Carnegie Mellon University,</span>
+            <span class="author-block"><sup style="color:#ed4b82;">6</sup>University of Victoria,</span>
+            <span class="author-block"><sup style="color:#9b51e0;">7</sup>Princeton University</span>
+          </div>
+
+          <br>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">*Core Contributors</span><br>
+            <span class="author-block">Corresponding to:</span>
+            <span class="author-block"><a href="mailto:xiangyue@in.ai">xiangyue@in.ai</a>,</span>
+            <span class="author-block"><a href="mailto:su.809@osu.edu">su.809@osu.edu</a>,</span>
+            <span class="author-block"><a href="mailto:wenhuchen@uwaterloo.ca">wenhuchen@uwaterloo.ca</a></span>
+          </div>
+          
+        
+          <!-- <section> -->
+            <!-- <div class="section" id="org-banners" style="display:fle">
+              <a href="https://www.ucla.edu/" target="_blank" rel="external">
+                  <img class="center-block org-banner" src="static/images/ucla.png" style="height:3em">
+              </a>
+              <a href="https://www.washington.edu/" target="blank" class="ext-link">
+                  <img class="center-block org-banner" src="static/images/uw.png" style="height:3em">
+              </a>
+              <a href="https://www.microsoft.com/en-us/research/" target="_blank" rel="external">
+                  <img class="center-block org-banner" src="static/images/microsoft.png" style="height:3em">
+              </a>
+            </div> -->
+          <!-- </section> -->
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <!-- @PAN TODO: change links -->
+                <a href="https://arxiv.org/pdf/xx.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/xx"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/MMMU-Org/MMMU"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/datasets/MMMU-Org/MMMU"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">🤗</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>Dataset</span>
+                </a>
+              </span>
+              
+              <!-- Leaderboard Link. -->
+              <span class="link-block">
+                <a href="#leaderboard"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <p style="font-size:18px">🏆</p>
+                  </span>
+                  <span>Leaderboard</span>
+                </a>
+              </span>
+              <!-- Visualization Link. -->
+              <span class="link-block">
+                <a href="#examples"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <p style="font-size:18px">📖</p>
+                  </span>
+                  <span>Examples</span>
+                </a>
+              </span>
+              <!-- Twitter Link. -->
+              <span class="link-block">
+                <a href="https://twitter.com/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <!-- 💻🔗 -->
+                      <p style="font-size:18px">🌐</p>
+                  </span>
+                  <span>Twitter</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  </style>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <!-- <div class="hero-body">
+      <img src="static/images/tease_scores.png" alt="Examples from the dataset"/>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
+        free-viewpoint
+        portraits.
+      </h2>
+    </div> -->
+      <!-- <div class="box m-5"> -->
+        <div class="content has-text-centered">
+          <img src="static/images/overview_mmlu.Jpeg" alt="geometric reasoning" width="100%"/>
+          <p> Overview of the MMMU dataset. MMMU presents four challenges: 1) <b>comprehensiveness</b>: 11.5K college-level problems across six broad disciplines and 30 college subjects; 
+            2) highly <b>heterogeneous</b> image types; 3) <b>interleaved</b> text and images; 4) <b>expert-level</b> perception and reasoning rooted in deep subject knowledge.</p>
+        </div>
+      <!-- </div> -->
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Introduction</h2>
+        <div class="content has-text-justified">
+          <p>
+            We introduce MMMU: a new benchmark designed to evaluate multimodal models on massive multi-discipline tasks demanding college-level subject knowledge and deliberate reasoning. MMMU includes 11.5K meticulously collected multimodal questions from college exams, quizzes, and textbooks, covering six core disciplines: Art & Design, Business, Science, Health & Medicine, Humanities & Social Science, and Tech & Engineering. These questions span 30 subjects and 183 subfields, comprising 32 highly heterogeneous image types, such as charts, diagrams, maps, tables, music sheets, and chemical structures. Unlike existing benchmarks, MMMU focuses on advanced perception and reasoning with domain-specific knowledge, challenging models to perform tasks akin to those faced by experts. Our evaluation of 14 open-source LMMs and the proprietary GPT-4V(ision) highlights the substantial challenges posed by MMMU. Even the advanced GPT-4V only achieves a 56% accuracy, indicating significant room for improvement. We believe MMMU will stimulate the community to build next-generation multimodal foundation models towards expert artificial general intelligence.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</div>
+</section>
+
+<!-- DATASET SECTION -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+  <h1 class="title is-1 mmmu">
+    <img src="static/images/mmmu_icon2.png" style="width:1em;vertical-align: middle" alt="Logo"/>
+    <span class="mmmu" style="vertical-align: middle">MMMU Benchmark</span>
+  </h1>
+  </div>
+</section>
+
+<!-- <section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Introduction</h2>
+        <div class="content has-text-justified">
+          <p> -->
+            
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <!-- <div class="column is-full-width has-text-centered"> -->
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            We introduce the Massive Multi-discipline Multimodal Understanding and Reasoning (MMMU) benchmark, a novel benchmark meticulously curated to assess the expert-level multimodal understanding capability of foundation models across a broad scope of tasks. Covering subjects across disciplines, including Art, Business, Health & Medicine, Science, Humanities & Social Science, and Tech & Engineering, and over subfields. The detailed subject coverage and statistics are detailed in a figure. The questions in our benchmark were manually collected by a team of college students (including coauthors) from various disciplines and subjects, drawing from online sources, textbooks, and lecture materials.
+          </p>
+          <img src="static/images/mmlu_example.Jpeg" alt="algebraic reasoning" class="center">
+          <br>
+          <p>
+            MMMU, constituting questions, is divided into a few-shot development set, a validation set, and a test set. The few-shot development set includes questions per subject, and the validation set, useful for hyperparameter selection, contains approximately questions, while the test set comprises questions. MMMU is designed to measure three essential skills in LMMs: perception, knowledge, and reasoning. Our aim is to evaluate how well these models can not only perceive and understand information across different modalities but also apply reasoning with subject-specific knowledge to derive the solution.
+          </p>
+          <p>
+            Our MMMU benchmark introduces key challenges to multimodal foundation models, as detailed in a figure. Among these, we particularly highlight the challenge stemming from the requirement for both expert-level visual perceptual abilities and deliberate reasoning with subject-specific knowledge. This challenge is vividly illustrated through our tasks, which not only demand the processing of various heterogeneous image types but also necessitate a model’s adeptness in using domain-specific knowledge to deeply understand both the text and images and to reason. This goes significantly beyond basic visual perception, calling for an advanced approach that integrates advanced multimodal analysis with domain-specific knowledge.
+          </p>
+
+          
+
+        </div>
+    </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <!-- <div class="column is-full-width has-text-centered"> -->
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Comparisons with Existing Benchmarks</h2>
+        <div class="content has-text-justified">
+          <p>
+            To further distinguish the difference between <i>dataset</i> and other existing ones, we elaborate the benchmark details in Figure. 
+            From the <i>breadth</i> perspective, the prior benchmarks are heavily focused on daily knowledge and common sense. 
+            The covered image format is also limited. Our benchmark aims to cover college-level knowledge with 32 image formats including diagrams, 
+            tables, charts, chemical structures, photos, paintings, geometric shapes, music sheets, medical images, etc. 
+            In the <i>depth</i> aspect, the previous benchmarks normally require commonsense knowledge or simple physical or temporal reasoning. 
+            In contrast, our benchmark requires deliberate reasoning with college-level subject knowledge.
+        </p>
+        <div class="content has-text-centered">
+          <img src="static/images/compare.Jpeg" alt="algebraic reasoning" class="center">
+          <p> Sampled MMMU examples from each discipline. The questions and images need expert-level knowledge to understand and reason.</p>
+        </div>
+          
+          
+        </div>
+    </div>
+    </div>
+
+    <div class="columns is-centered m-6">
+      <div class="column is-full has-text-centered content">
+        <h2 class="title is-3">Statistics</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/mmmu_subject_distribution.Jpeg" alt="algebraic reasoning" width="95%"/>
+              <p> Sampled MMMU examples from each discipline. The questions and images need expert-level knowledge to understand and reason.</p>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/table4.Jpeg" alt="arithmetic reasoning" width="35%"/>
+              <p> Key statistics of the MMMU benchmark</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="columns is-centered m-6">
+      <div class="column is-max-desktop has-text-centered">
+        <h2 class="title is-3" id="visualization">Visualization</h2>
+        <iframe src="visualizer/explore.html" style="width: 100%;min-height: 100vh; border-radius: 20px;"></iframe>
+      </div>
+    </div> -->
+  </div>
+</section>
+
+<!-- RESULTS SECTION -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 mmmu">Experiment Results</h1>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+
+
+
+<!-------------------------------------------------------------------- RESULTS SECTION -------------------------------------------------------------------->
+    <div class="columns is-centered m-6">
+      <div class="column is-full has-text-centered content">
+        <h2 class="title is-3" id="leaderboard">Leaderboard</h2>
+        <div class="content">
+          <div class="content has-text-justified">
+            <p>
+              We evaluate various models including LLMs and LMMs.
+              In each type, we consider both closed- and open-source models.
+              Our evaluation is conducted under a zero-shot setting to assess the capability of models to generate accurate answers without fine-tuning or few-shot demonstrations on our benchmark.
+              For all models, we use the default prompt provided by each model for multi-choice or open QA, if available.
+              If models do not provide prompts for task types in \dataset, we conduct prompt engineering on the validation set and use the most effective prompt for the later zero-shot experiment.
+              All experiments are conducted on a machine equipped with NVIDIA A100 GPUs.
+            </p>
+          </div>
+
+          <button id="toggleButton" style="text-align: left;" onclick="changeButtonText()">Switch to Validation Set</button>
+
+            <table id="table1" class="js-sort-table">
+              <tr>
+                <td class="js-sort-number"><strong></strong></td>
+                <td class="js-sort-number"><strong>Overall</strong></td>
+                <td class="js-sort-number"><strong>Art & Design</strong></td>
+                <td class="js-sort-number"><strong>Business</strong></td>
+                <td class="js-sort-number"><strong>Science</strong></td>
+                <td class="js-sort-number"><strong>Health & Medicine</strong></td>
+                <td class="js-sort-number"><strong>Human. & Social Sci.</strong></td>
+                <td class="js-sort-number"><strong>Tech & Eng.</strong></td>
+              </tr>
+              <tr style="background-color: #f4f9fe;">
+                <td style="color: #808080;">Random Choice</td>
+                <td style="color: #808080;">23.9</td>
+                <td style="color: #808080;">24.1</td>
+                <td style="color: #808080;">24.9</td>
+                <td style="color: #808080;">21.6</td>
+                <td style="color: #808080;">25.3</td>
+                <td style="color: #808080;">22.8</td>
+                <td style="color: #808080;">24.8</td>
+              </tr>
+              <tr style="background-color: #f4f9fe;">
+                <td style="color: #808080;">Frequent Choice</td>
+                <td style="color: #808080;">25.8</td>
+                <td style="color: #808080;">26.7</td>
+                <td style="color: #808080;">28.4</td>
+                <td style="color: #808080;">24.0</td>
+                <td style="color: #808080;">24.4</td>
+                <td style="color: #808080;">25.2</td>
+                <td style="color: #808080;">26.5</td>
+              </tr>
+              <!-- <tr>
+                <td colspan="8" style="font-size: 18px;"><b>Large Multimodal Models (LMMs): Text + Image as Input</b></td>
+              </tr> -->
+              <tr style="background-color: #f9f2f8;">
+                <td><b>OpenFlamingo2-9B</b></td>
+                <td>26.3</td>
+                <td>31.7</td>
+                <td>23.5</td>
+                <td>26.3</td>
+                <td>26.3</td>
+                <td>27.9</td>
+                <td>25.1</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>Kosmos2</b></td>
+                <td>26.6</td>
+                <td>28.8</td>
+                <td>23.7</td>
+                <td>26.6</td>
+                <td>27.2</td>
+                <td>26.3</td>
+                <td>26.8</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>mPLUG-OWL2</b></td>
+                <td>26.8</td>
+                <td>28.5</td>
+                <td>27.2</td>
+                <td>23.5</td>
+                <td>27.0</td>
+                <td>31.6</td>
+                <td>27.0</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>Fuyu-8B</b></td>
+                  <td>27.4</td>
+                  <td>29.9</td>
+                  <td>27.0</td>
+                  <td>25.6</td>
+                  <td>27.0</td>
+                  <td>32.5</td>
+                  <td>26.4</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>MiniGPT4-Vicuna-13B</b></td>
+                <td>27.6</td>
+                <td>30.2</td>
+                <td>27.0</td>
+                <td>26.2</td>
+                <td>26.9</td>
+                <td>30.9</td>
+                <td>27.2</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>LLaMA-Adapter2-7B</b></td>
+                <td>27.7</td>
+                <td>35.2</td>
+                <td>25.4</td>
+                <td>25.6</td>
+                <td>30.0</td>
+                <td>29.1</td>
+                <td>25.7</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>Otter</b></td>
+                <td>29.1</td>
+                <td>37.4</td>
+                <td>24.0</td>
+                <td>24.1</td>
+                <td>29.6</td>
+                <td>35.9</td>
+                <td style="text-decoration: underline;">30.2</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>CogVLM</b></td>
+                <td>30.1</td>
+                <td>38.0</td>
+                <td>25.6</td>
+                <td>25.1</td>
+                <td>31.2</td>
+                <td>41.5</td>
+                <td>28.9</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>InstructBLIP-T5-XL</b></td>
+                <td>30.6</td>
+                <td>43.3</td>
+                <td>25.2</td>
+                <td>25.2</td>
+                <td>29.3</td>
+                <td>45.8</td>
+                <td>28.6</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>BLIP-2 FLAN-T5-XL</b></td>
+                <td>31.0</td>
+                <td>43.0</td>
+                <td>25.6</td>
+                <td>25.1</td>
+                <td>31.8</td>
+                <td>48.0</td>
+                <td>27.8</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>Qwen-VL-7B</b></td>
+                <td>32.9</td>
+                <td>47.7</td>
+                <td style="text-decoration: underline;">29.8</td>
+                <td>25.6</td>
+                <td>33.6</td>
+                <td>45.3</td>
+                <td style="text-decoration: underline;">30.2</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>LLaVA-1.5-13B</b></td>
+                <td>33.6</td>
+                <td><b>49.8</b></td>
+                <td>28.2</td>
+                <td>25.9</td>
+                <td><b>34.9</b></td>
+                <td><b>54.7</b></td>
+                <td>28.3</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>InstructBLIP-T5-XXL</b></td>
+                <td style="text-decoration: underline;">33.8</td>
+                <td>48.5</td>
+                <td><b>30.6</b></td>
+                <td><b>27.6</b></td>
+                <td>33.6</td>
+                <td>49.8</td>
+                <td>29.4</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>BLIP-2 FLAN-T5-XXL</b></td>
+                <td><b>34.0</b></td>
+                <td style="text-decoration: underline;">49.2</td>
+                <td>28.6</td>
+                <td style="text-decoration: underline;">27.3</td>
+                <td style="text-decoration: underline;">33.7</td>
+                <td style="text-decoration: underline;">51.5</td>
+                <td><b>30.4</b></td>
+              </tr>
+              <!-- <tr>
+                <td colspan="8" style="border-bottom: 1px dashed #000000;"></td>
+              </tr> -->
+              <tr style="background-color: #f9f2f8;">
+                <td><b>GPT-4V(ision) (Playground)</b></td>
+                <td><b>55.7</b></td>
+                <td><b>65.3</b></td>
+                <td><b>64.3</b></td>
+                <td><b>48.4</b></td>
+                <td><b>63.5</b></td>
+                <td><b>76.3</b></td>
+                <td><b>41.7</b></td>
+              </tr>              
+              <!-- <tr>
+                <td colspan="8" style="font-size: 18px;"><b>Large Language Models (LLMs): Only Text as Input</b></td>
+              </tr>               -->
+              <tr style="background-color: #f4fdf5;">
+                <td><b>Llama2 7B</b></td>
+                <td>28.7</td>
+                <td>30.7</td>
+                <td>27.2</td>
+                <td>26.7</td>
+                <td>27.7</td>
+                <td>32.6</td>
+                <td>29.8</td>
+              </tr>
+              <!-- <tr>
+                <td colspan="8" style="border-bottom: 1px dashed #000000;"></td>
+              </tr> -->
+              <tr style="background-color: #f4fdf5;">
+                <td><b>FLAN-T5-XXL</b></td>
+                <td>31.3</td>
+                <td>37.1</td>
+                <td><b>28.8</b></td>
+                <td><b>28.6</b></td>
+                <td>32.5</td>
+                <td>46.4</td>
+                <td>28.3</td>
+              </tr>
+              <tr style="background-color: #f4fdf5;">
+                <td><b>FLAN-T5-XXL + OCR</b></td>
+                <td><b>31.9</b></td>
+                <td>36.2</td>
+                <td><b>28.8</b></td>
+                <td>26.2</td>
+                <td>32.6</td>
+                <td><b>50.5</b></td>
+                <td><b>29.7</b></td>
+              </tr>
+              <tr style="background-color: #f4fdf5;">
+                <td><b>FLAN-T5-XXL + LLaVA Caption</b></td>
+                <td><b>31.9</b></td>
+                <td><b>38.4</b></td>
+                <td>27.8</td>
+                <td>27.0</td>
+                <td><b>33.2</b></td>
+                <td>49.9</td>
+                <td>28.7</td>
+              </tr>
+              <!-- <tr>
+                <td colspan="8" style="border-bottom: 1px dashed #000000;"></td>
+              </tr> -->
+              <tr style="background-color: #f4fdf5;">
+                <td><b>Vicuna-13B</b></td>
+                <td>31.0</td>
+                <td>35.1</td>
+                <td><b>30.1</b></td>
+                <td>24.7</td>
+                <td>31.4</td>
+                <td>44.8</td>
+                <td>30.1</td>
+              </tr>
+              <tr style="background-color: #f4fdf5;">
+                <td><b>Vicuna-13B + OCR</b></td>
+                <td>31.9</td>
+                <td>37.1</td>
+                <td>28.6</td>
+                <td><b>26.5</b></td>
+                <td>32.0</td>
+                <td>49.3</td>
+                <td>30.0</td>
+              </tr>
+              <tr style="background-color: #f4fdf5;">
+                <td><b>Vicuna-13B + LLaVA Caption</b></td>
+                <td><b>32.7</b></td>
+                <td><b>42.0</b></td>
+                <td>26.8</td>
+                <td>26.2</td>
+                <td><b>33.4</b></td>
+                <td><b>49.4</b></td>
+                <td><b>31.4</b></td>
+              </tr>
+              <!-- <tr>
+                <td colspan="8" style="border-bottom: 1px dashed #000000;"></td>
+              </tr>            -->
+              <tr style="background-color: #f4fdf5;">
+                <td><b>GPT-4 Text</b></td>
+                <td>33.8</td>
+                <td>32.9</td>
+                <td>28.5</td>
+                <td>30.6</td>
+                <td>41.3</td>
+                <td>53.0</td>
+                <td>28.4</td>
+              </tr>
+          </table>
+
+
+            <table id="table2" class="js-sort-table hidden">
+              <tr>
+                <td class="js-sort-number"><strong></strong></td>
+                <td class="js-sort-number"><strong>Overall</strong></td>
+                <td class="js-sort-number"><strong>Art & Design</strong></td>
+                <td class="js-sort-number"><strong>Business</strong></td>
+                <td class="js-sort-number"><strong>Science</strong></td>
+                <td class="js-sort-number"><strong>Health & Medicine</strong></td>
+                <td class="js-sort-number"><strong>Human. & Social Sci.</strong></td>
+                <td class="js-sort-number"><strong>Tech & Eng.</strong></td>
+              </tr>
+              <tr style="background-color: #f4f9fe;">
+                <td style="color: #808080;">Random Choice</td>
+                <td style="color: #808080;">123455.9</td>
+                <td style="color: #808080;">24.1</td>
+                <td style="color: #808080;">24.9</td>
+                <td style="color: #808080;">21.6</td>
+                <td style="color: #808080;">25.3</td>
+                <td style="color: #808080;">22.8</td>
+                <td style="color: #808080;">24.8</td>
+              </tr>
+              <tr style="background-color: #f4f9fe;">
+                <td style="color: #808080;">Frequent Choice</td>
+                <td style="color: #808080;">25.8</td>
+                <td style="color: #808080;">26.7</td>
+                <td style="color: #808080;">28.4</td>
+                <td style="color: #808080;">24.0</td>
+                <td style="color: #808080;">24.4</td>
+                <td style="color: #808080;">25.2</td>
+                <td style="color: #808080;">26.5</td>
+              </tr>
+              <!-- <tr>
+                <td colspan="8" style="font-size: 18px;"><b>Large Multimodal Models (LMMs): Text + Image as Input</b></td>
+              </tr> -->
+              <tr style="background-color: #f9f2f8;">
+                <td><b>OpenFlamingo2-9B</b></td>
+                <td>26.3</td>
+                <td>31.7</td>
+                <td>23.5</td>
+                <td>26.3</td>
+                <td>26.3</td>
+                <td>27.9</td>
+                <td>25.1</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>Kosmos2</b></td>
+                <td>26.6</td>
+                <td>28.8</td>
+                <td>23.7</td>
+                <td>26.6</td>
+                <td>27.2</td>
+                <td>26.3</td>
+                <td>26.8</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>mPLUG-OWL2</b></td>
+                <td>26.8</td>
+                <td>28.5</td>
+                <td>27.2</td>
+                <td>23.5</td>
+                <td>27.0</td>
+                <td>31.6</td>
+                <td>27.0</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>Fuyu-8B</b></td>
+                  <td>27.4</td>
+                  <td>29.9</td>
+                  <td>27.0</td>
+                  <td>25.6</td>
+                  <td>27.0</td>
+                  <td>32.5</td>
+                  <td>26.4</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>MiniGPT4-Vicuna-13B</b></td>
+                <td>27.6</td>
+                <td>30.2</td>
+                <td>27.0</td>
+                <td>26.2</td>
+                <td>26.9</td>
+                <td>30.9</td>
+                <td>27.2</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>LLaMA-Adapter2-7B</b></td>
+                <td>27.7</td>
+                <td>35.2</td>
+                <td>25.4</td>
+                <td>25.6</td>
+                <td>30.0</td>
+                <td>29.1</td>
+                <td>25.7</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>Otter</b></td>
+                <td>29.1</td>
+                <td>37.4</td>
+                <td>24.0</td>
+                <td>24.1</td>
+                <td>29.6</td>
+                <td>35.9</td>
+                <td style="text-decoration: underline;">30.2</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>CogVLM</b></td>
+                <td>30.1</td>
+                <td>38.0</td>
+                <td>25.6</td>
+                <td>25.1</td>
+                <td>31.2</td>
+                <td>41.5</td>
+                <td>28.9</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>InstructBLIP-T5-XL</b></td>
+                <td>30.6</td>
+                <td>43.3</td>
+                <td>25.2</td>
+                <td>25.2</td>
+                <td>29.3</td>
+                <td>45.8</td>
+                <td>28.6</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>BLIP-2 FLAN-T5-XL</b></td>
+                <td>31.0</td>
+                <td>43.0</td>
+                <td>25.6</td>
+                <td>25.1</td>
+                <td>31.8</td>
+                <td>48.0</td>
+                <td>27.8</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>Qwen-VL-7B</b></td>
+                <td>32.9</td>
+                <td>47.7</td>
+                <td style="text-decoration: underline;">29.8</td>
+                <td>25.6</td>
+                <td>33.6</td>
+                <td>45.3</td>
+                <td style="text-decoration: underline;">30.2</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>LLaVA-1.5-13B</b></td>
+                <td>33.6</td>
+                <td><b>49.8</b></td>
+                <td>28.2</td>
+                <td>25.9</td>
+                <td><b>34.9</b></td>
+                <td><b>54.7</b></td>
+                <td>28.3</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>InstructBLIP-T5-XXL</b></td>
+                <td style="text-decoration: underline;">33.8</td>
+                <td>48.5</td>
+                <td><b>30.6</b></td>
+                <td><b>27.6</b></td>
+                <td>33.6</td>
+                <td>49.8</td>
+                <td>29.4</td>
+              </tr>
+              <tr style="background-color: #f9f2f8;">
+                <td><b>BLIP-2 FLAN-T5-XXL</b></td>
+                <td><b>34.0</b></td>
+                <td style="text-decoration: underline;">49.2</td>
+                <td>28.6</td>
+                <td style="text-decoration: underline;">27.3</td>
+                <td style="text-decoration: underline;">33.7</td>
+                <td style="text-decoration: underline;">51.5</td>
+                <td><b>30.4</b></td>
+              </tr>
+              <!-- <tr>
+                <td colspan="8" style="border-bottom: 1px dashed #000000;"></td>
+              </tr> -->
+              <tr style="background-color: #f9f2f8;">
+                <td><b>GPT-4V(ision) (Playground)</b></td>
+                <td><b>55.7</b></td>
+                <td><b>65.3</b></td>
+                <td><b>64.3</b></td>
+                <td><b>48.4</b></td>
+                <td><b>63.5</b></td>
+                <td><b>76.3</b></td>
+                <td><b>41.7</b></td>
+              </tr>              
+              <!-- <tr>
+                <td colspan="8" style="font-size: 18px;"><b>Large Language Models (LLMs): Only Text as Input</b></td>
+              </tr>               -->
+              <tr style="background-color: #f4fdf5;">
+                <td><b>Llama2 7B</b></td>
+                <td>28.7</td>
+                <td>30.7</td>
+                <td>27.2</td>
+                <td>26.7</td>
+                <td>27.7</td>
+                <td>32.6</td>
+                <td>29.8</td>
+              </tr>
+              <!-- <tr>
+                <td colspan="8" style="border-bottom: 1px dashed #000000;"></td>
+              </tr> -->
+              <tr style="background-color: #f4fdf5;">
+                <td><b>FLAN-T5-XXL</b></td>
+                <td>31.3</td>
+                <td>37.1</td>
+                <td><b>28.8</b></td>
+                <td><b>28.6</b></td>
+                <td>32.5</td>
+                <td>46.4</td>
+                <td>28.3</td>
+              </tr>
+              <tr style="background-color: #f4fdf5;">
+                <td><b>FLAN-T5-XXL + OCR</b></td>
+                <td><b>31.9</b></td>
+                <td>36.2</td>
+                <td><b>28.8</b></td>
+                <td>26.2</td>
+                <td>32.6</td>
+                <td><b>50.5</b></td>
+                <td><b>29.7</b></td>
+              </tr>
+              <tr style="background-color: #f4fdf5;">
+                <td><b>FLAN-T5-XXL + LLaVA Caption</b></td>
+                <td><b>31.9</b></td>
+                <td><b>38.4</b></td>
+                <td>27.8</td>
+                <td>27.0</td>
+                <td><b>33.2</b></td>
+                <td>49.9</td>
+                <td>28.7</td>
+              </tr>
+              <!-- <tr>
+                <td colspan="8" style="border-bottom: 1px dashed #000000;"></td>
+              </tr> -->
+              <tr style="background-color: #f4fdf5;">
+                <td><b>Vicuna-13B</b></td>
+                <td>31.0</td>
+                <td>35.1</td>
+                <td><b>30.1</b></td>
+                <td>24.7</td>
+                <td>31.4</td>
+                <td>44.8</td>
+                <td>30.1</td>
+              </tr>
+              <tr style="background-color: #f4fdf5;">
+                <td><b>Vicuna-13B + OCR</b></td>
+                <td>31.9</td>
+                <td>37.1</td>
+                <td>28.6</td>
+                <td><b>26.5</b></td>
+                <td>32.0</td>
+                <td>49.3</td>
+                <td>30.0</td>
+              </tr>
+              <tr style="background-color: #f4fdf5;">
+                <td><b>Vicuna-13B + LLaVA Caption</b></td>
+                <td><b>32.7</b></td>
+                <td><b>42.0</b></td>
+                <td>26.8</td>
+                <td>26.2</td>
+                <td><b>33.4</b></td>
+                <td><b>49.4</b></td>
+                <td><b>31.4</b></td>
+              </tr>
+              <!-- <tr>
+                <td colspan="8" style="border-bottom: 1px dashed #000000;"></td>
+              </tr>            -->
+              <tr style="background-color: #f4fdf5;">
+                <td><b>GPT-4 Text</b></td>
+                <td>33.8</td>
+                <td>32.9</td>
+                <td>28.5</td>
+                <td>30.6</td>
+                <td>41.3</td>
+                <td>53.0</td>
+                <td>28.4</td>
+              </tr>
+          </table>
+
+
+            <p> Overall results of different models on the MMMU test set. Besides reporting the performance of LMMs, we additionally add
+              text-only LLM baselines. The best-performing model in each category is in-bold, and the second best is underlined</p> 
+        </div>
+      </div>
+    </div>
+  
+<!-------------------------------------------------------------------- Error Analysis SECTION -------------------------------------------------------------------->
+    <div class="columns is-centered m-6">
+      <div class="column is-full has-text-centered content">
+        <h2 class="title is-3">Error Analysis</h2>
+        <div class="content has-text-justified">
+          <p>
+            We delve into the analysis of errors by GPT-4V, a pivotal aspect for understanding its operational capabilities and limitations. 
+            This analysis serves not only to identify the model's current shortcomings but also to guide future enhancements in its design and training. 
+            We meticulously examine 150 randomly sampled error instances from GPT-4V's predictions. 
+            These instances are analyzed by expert annotators who identify the root causes of mispredictions based on their knowledge and the golden explanations if available. 
+            The distribution of these errors is illustrated in Figure, and a selection of 100 notable cases, along with detailed analyses, is included in the Appendix.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="static/images/error_distribution_1.Jpeg" alt="error distribution" width="25%">
+          <p> Error distribution over 150 annotated GPT-4V errors.</p>
+        </div>
+        <!-- <div id="results-carousel" class="carousel results-carousel">
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error_distribution_1.Jpeg" alt="algebraic reasoning" width="45%"/>
+              <p> Error distribution over 150 annotated GPT-4V errors.</p>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error_case_main_text_1_1.Jpeg" alt="arithmetic reasoning" width="45%"/>
+              <p> A basic perceptual error, easy for humans but challenging for GPT-4V.</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+<!-------------------------------------------------------------------- Error Example  -------------------------------------------------------------------->
+
+    <div class="columns is-centered m-6">
+      <div class="column is-full has-text-centered content">
+        <h2 class="title is-3" id="examples">Error Examples</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/1.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/2.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/3.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/4.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/5.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/6.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/7.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/8.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/9.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/10.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/11.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/12.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/13.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/14.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/15.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/16.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/17.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/18.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/19.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/20.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/21.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/22.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/23.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/24.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/25.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/26.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/27.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/28.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/29.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/30.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/31.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/32.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/33.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/34.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/35.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/36.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/37.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/38.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/39.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/40.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/41.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/42.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/43.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/44.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/error/45.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-------------------------------------------------------------------- Correct Example -------------------------------------------------------------------->
+
+    <div class="columns is-centered m-6">
+      <div class="column is-full has-text-centered content">
+        <h2 class="title is-3">Correct Examples</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/correct/1.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/correct/2.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/correct/3.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/correct/4.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/correct/5.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/correct/6.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/correct/7.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/correct/8.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/correct/9.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/correct/10.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/correct/11.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/correct/12.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/correct/13.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/correct/14.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/correct/15.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/correct/16.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/correct/17.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/correct/18.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/correct/19.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/correct/20.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/correct/21.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/correct/22.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/correct/23.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/correct/24.png" alt="grade-lv" width="60%"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-------------------------------------------------------------------- RESULTS SECTION -------------------------------------------------------------------->
+
+
+  </div>
+</section>
+
+
+<!-- @PAN TODO: bibtex -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3 has-text-centered">BibTeX</h2>
+    <pre><code>@article{yue2023mmmu,
+  title={MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI},
+  author={Yue, Xiang and Ni, Yuansheng and Zhang, Kai and Zheng, Tianyu and Liu, Ruoqi and Zhang, Ge and Jiang, Dongfu and Ren, Weiming and Yang, Zhenzhu and Sun, Renliang and Zheng, Boyuan and Stevens, Samuel and Yuan, Ruibin and Yu, Botao and Sun, Yuxuan and Liu, Yibo and Wei, Cong and Yin, Ming and Huang, Wenhao and Sun, Huan and Su, Yu and Chen, Wenhu},
+  journal={arXiv preprint Link},
+  year={2023},
+}</code></pre>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <!-- <div class="container"> -->
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is website adapted from <a href="https://nerfies.github.io/">Nerfies</a> and <a href="https://mathvista.github.io/">MathVista</a>, licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+
+</footer>
+
+<!-- <script>
+  // 切换表格可见性的函数
+  function toggleTables() {
+      var currentData = document.getElementById('currentData');
+      var alternativeData = document.getElementById('alternativeData');
+
+      // 判断当前哪个表格是可见的，并切换
+      if (currentData.classList.contains('hidden')) {
+          currentData.classList.remove('hidden');
+          alternativeData.classList.add('hidden');
+      } else {
+          currentData.classList.add('hidden');
+          alternativeData.classList.remove('hidden');
+      }
+  }
+
+  // 为按钮添加事件监听器
+  document.getElementById('toggleButton').addEventListener('click', toggleTables);
+</script> -->
+
+
+<script>
+  function changeButtonText() {
+    var button = document.getElementById('toggleButton');
+    if (button.innerHTML === "Switch to Validation Set") {
+      button.innerHTML = "Switch to Test Set";
+    } else {
+      button.innerHTML = "Switch to Validation Set";
+    }
+  }
+  function sortTable(table, column, type, asc = true) {
+      var tbody = table.tBodies[0];
+      var rows = Array.from(tbody.rows);
+
+      // 根据列类型和升降序对行进行排序
+      rows.sort(function(a, b) {
+          var valA = a.cells[column].textContent;
+          var valB = b.cells[column].textContent;
+
+          return (type === 'number' ? parseFloat(valA) - parseFloat(valB) : valA.localeCompare(valB)) * (asc ? 1 : -1);
+      });
+
+      // 更新表格
+      rows.forEach(row => tbody.appendChild(row));
+  }
+
+  document.querySelectorAll('.sortable').forEach(function(th) {
+      th.addEventListener('click', function() {
+          var table = th.closest('table');
+          var columnIndex = Array.from(th.parentNode.children).indexOf(th);
+          var type = th.getAttribute('data-type');
+          var asc = !th.classList.contains('asc');
+          sortTable(table, columnIndex, type, asc);
+          th.classList.toggle('asc', asc);
+          th.classList.toggle('desc', !asc);
+      });
+  });
+
+  // 切换表格的函数
+  function toggleTables() {
+      var table1 = document.getElementById('table1');
+      var table2 = document.getElementById('table2');
+      table1.classList.toggle('hidden');
+      table2.classList.toggle('hidden');
+  }
+
+  document.getElementById('toggleButton').addEventListener('click', toggleTables);
+</script>
+
+<style>
+  .hidden {
+      display: none;
+  }
+  .sortable:hover {
+      cursor: pointer;
+  }
+  .asc::after {
+      content: ' ↑';
+  }
+  .desc::after {
+      content: ' ↓';
+  }
+</style>
+
+</body>
+</html>
