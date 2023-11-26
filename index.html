@@ -439,7 +439,7 @@
           <button id="toggleButton" onclick="changeButtonText()">Switch to Validation Set</button>
           <table id="table1" class="js-sort-table">
             <tr>
-              <td class="js-sort-number"><strong></strong></td>
+              <td class="js-sort-number"><strong>Reset</strong></td>
               <td class="js-sort-number"><strong>Overall</strong></td>
               <td class="js-sort-number"><strong>Art & Design</strong></td>
               <td class="js-sort-number"><strong>Business</strong></td>
@@ -712,7 +712,7 @@
 
           <table id="table2" class="js-sort-table hidden">
             <tr>
-              <td class="js-sort-number"><strong></strong></td>
+              <td class="js-sort-number"><strong>Reset</strong></td>
               <td class="js-sort-number"><strong>Overall</strong></td>
               <td class="js-sort-number"><strong>Art & Design</strong></td>
               <td class="js-sort-number"><strong>Business</strong></td>
@@ -1466,33 +1466,56 @@
       button.innerHTML = "Switch to Validation Set";
     }
   }
-  function sortTable(table, column, type, asc = true) {
-      var tbody = table.tBodies[0];
-      var rows = Array.from(tbody.rows);
+  document.addEventListener('DOMContentLoaded', function() {
+    var tables = document.querySelectorAll('table');
+    
+    tables.forEach(function(table) {
+        if (!table) return;
 
-      // 根据列类型和升降序对行进行排序
-      rows.sort(function(a, b) {
-          var valA = a.cells[column].textContent;
-          var valB = b.cells[column].textContent;
+        var initialRows = Array.from(table.rows).slice(1);
+        table.addEventListener('click', function(event) {
+            var clickedCell = event.target.closest('td, th');
+            if (!clickedCell) return;
+            var headerRow = clickedCell.parentNode;
+            var columnIndex = Array.from(headerRow.cells).indexOf(clickedCell);
+            var type = clickedCell.getAttribute('data-type');
 
-          return (type === 'number' ? parseFloat(valA) - parseFloat(valB) : valA.localeCompare(valB)) * (asc ? 1 : -1);
-      });
+            if (headerRow.rowIndex === 0) {
+                if (columnIndex === 0) {
+                    table.tBodies[0].innerHTML = '';
+                    initialRows.forEach(row => table.tBodies[0].appendChild(row.cloneNode(true)));
+                // } else {
+                //     // 获取当前排序方向，如果没有则默认为降序
+                //     var currentSort = clickedCell.getAttribute('data-sort') || 'desc';
+                //     // 切换排序方向
+                //     var newSort = currentSort === 'asc' ? 'desc' : 'asc';
+                //     // 更新单元格的data-sort属性
+                //     clickedCell.setAttribute('data-sort', newSort);
+                //     sortTable(table, columnIndex, type, newSort === 'asc');
+                }
+            }
+        });
+    });
+});
 
-      // 更新表格
-      rows.forEach(row => tbody.appendChild(row));
-  }
+function sortTable(table, column, type, asc) {
+    var tbody = table.tBodies[0];
+    var rows = Array.from(tbody.rows);
 
-  document.querySelectorAll('.sortable').forEach(function(th) {
-      th.addEventListener('click', function() {
-          var table = th.closest('table');
-          var columnIndex = Array.from(th.parentNode.children).indexOf(th);
-          var type = th.getAttribute('data-type');
-          var asc = !th.classList.contains('asc');
-          sortTable(table, columnIndex, type, asc);
-          th.classList.toggle('asc', asc);
-          th.classList.toggle('desc', !asc);
-      });
-  });
+    rows.sort(function(a, b) {
+        var valA = a.cells[column].textContent;
+        var valB = b.cells[column].textContent;
+
+        if (type === 'number') {
+            valA = parseFloat(valA);
+            valB = parseFloat(valB);
+        }
+
+        return asc ? valA - valB : valB - valA;
+    });
+
+    rows.forEach(row => tbody.appendChild(row));
+}
 
   // 切换表格的函数
   function toggleTables() {
