@@ -171,3 +171,22 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 }
+
+.bottom-text {
+  margin-top: 30px; 
+}
+
+
+.model-labels-container {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px; 
+}
+
+.model-label {
+  display: inline-block;
+  padding: 4px 10px;
+  margin: 5px;
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+}
