@@ -144,9 +144,30 @@ body {
   padding: 10px;
 }
 
-@media screen and (max-width: 768px) {
-  #org-banners {
-    flex-direction: column;
-    justify-content: space-around;
+.chart-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.chart-item {
+  text-align: center;
+}
+
+.chart-label {
+  margin-top: 5px;
+}
+
+/* 媒体查询，只有当浏览器窗口宽度大于600px时才会应用 */
+@media (min-width: 600px) {
+  .chart-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+/* 当浏览器窗口宽度大于900px时 */
+@media (min-width: 900px) {
+  .chart-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 }
