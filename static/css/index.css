@@ -29,6 +29,13 @@ body {
 }
 
 
+.publication-links {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center; 
+}
+
+
 .publication-title {
 }
 
