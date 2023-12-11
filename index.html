@@ -418,8 +418,312 @@
             </p>
           </div>
 
-          <button id="toggleButton" onclick="changeButtonText()">Switch to Validation Set</button>
-          <table id="table1" class="js-sort-table">
+          <button id="toggleButton" onclick="changeButtonText()">Switch to Test Set</button>
+          <table id="table1" class="js-sort-table ">
+            <tr>
+              <td class="js-sort-number"><strong>Reset</strong></td>
+              <td class="js-sort-number"><strong>Overall</strong></td>
+              <td class="js-sort-number"><strong>Art & Design</strong></td>
+              <td class="js-sort-number"><strong>Business</strong></td>
+              <td class="js-sort-number"><strong>Science</strong></td>
+              <td class="js-sort-number"><strong>Health & Medicine</strong></td>
+              <td class="js-sort-number"><strong>Human. & Social Sci.</strong></td>
+              <td class="js-sort-number"><strong>Tech & Eng.</strong></td>
+            </tr>
+            <tr style="background-color: #edfbff;">
+              <td style="text-align: left;"><b>Gemini Ultra</b></td>
+              <td><b>59.4</b></td>
+              <td><b>70.0</b></td>
+              <td>56.7</td>
+              <td>48.0</td>
+              <td><b>67.3</b></td>
+              <td><b>78.3</b></td>
+              <td><b>47.1</b></td>
+            </tr>
+            <tr style="background-color: #f8fffe;">
+              <td style="text-align: left;"><b>GPT-4V(ision) (Playground)</b></td>
+              <td>56.8</td>
+              <td>65.8</td>
+              <td><b>59.3</b></td>
+              <td><b>54.7</b></td>
+              <td>64.7</td>
+              <td>72.5</td>
+              <td>36.7</td>
+            </tr>
+            <tr style="background-color: #edfbff;">
+              <td style="text-align: left;"><b>Gemini Pro</b></td>
+              <td><b>47.9</b></td>
+              <td><b>-</b></td>
+              <td>-</td>
+              <td>-</td>
+              <td><b>-</b></td>
+              <td><b>-</b></td>
+              <td><b>-</b></td>
+            </tr>
+            <tr style="background-color: #f9f2f8;">
+              <td style="text-align: left;"><b>LLaVA-1.5-13B</b></td>
+              <td><b>36.4</b></td>
+              <td><b>51.7</b></td>
+              <td>22.7</td>
+              <td>29.3</td>
+              <td><b>38.7</b></td>
+              <td><b>53.3</b></td>
+              <td>31.4</td>
+            </tr> 
+            <tr style="background-color: #f9f2f8;">
+              <td style="text-align: left;"><b>Qwen-VL-7B</b></td>
+              <td style="text-decoration: underline;">35.9</td>
+              <td><b>51.7</b></td>
+              <td>29.3</td>
+              <td>29.3</td>
+              <td>33.3</td>
+              <td>45.0</td>
+              <td style="text-decoration: underline;">32.9</td>
+            </tr>  
+            <tr style="background-color: #f9f2f8;">
+              <td style="text-align: left;"><b>InstructBLIP-T5-XXL</b></td>
+              <td>35.7</td>
+              <td>44.2</td>
+              <td>24.0</td>
+              <td>30.7</td>
+              <td style="text-decoration: underline;">35.3</td>
+              <td>49.2</td>
+              <td><b>35.2</b></td>
+            </tr>            
+            <tr style="background-color: #f9f2f8;">
+              <td style="text-align: left;"><b>BLIP-2 FLAN-T5-XXL</b></td>
+              <td>35.4</td>
+              <td>41.7</td>
+              <td style="text-decoration: underline;">30.0</td>
+              <td><b>34.7</b></td>
+              <td>32.0</td>
+              <td style="text-decoration: underline;">50.8</td>
+              <td>30.0</td>
+            </tr>
+            <tr style="background-color: #f9f2f8;">
+              <td style="text-align: left;"><b>BLIP-2 FLAN-T5-XL</b></td>
+              <td>34.4</td>
+              <td>44.2</td>
+              <td>26.7</td>
+              <td>30.7</td>
+              <td style="text-decoration: underline;">35.3</td>
+              <td>50.0</td>
+              <td>27.6</td>
+            </tr>   
+            <tr style="background-color: #f9f2f8;">
+              <td style="text-align: left;"><b>InstructBLIP-T5-XL</b></td>
+              <td>32.9</td>
+              <td>40.0</td>
+              <td>28.0</td>
+              <td>32.7</td>
+              <td>28.7</td>
+              <td>47.5</td>
+              <td>27.1</td>
+            </tr>    
+            <tr style="background-color: #f9f2f8;">
+              <td style="text-align: left;"><b>mPLUG-OWL2</b></td>
+              <td>32.7</td>
+              <td>45.8</td>
+              <td>24.7</td>
+              <td>22.7</td>
+              <td>32.0</td>
+              <td>45.8</td>
+              <td>31.0</td>
+            </tr>  
+            <tr style="background-color: #f9f2f8;">
+              <td style="text-align: left;"><b>Otter</b></td>
+              <td>32.2</td>
+              <td>37.5</td>
+              <td>24.0</td>
+              <td><b>34.7</b></td>
+              <td>30.7</td>
+              <td>41.7</td>
+              <td>29.0</td>
+            </tr>          
+            <tr style="background-color: #f9f2f8;">
+              <td style="text-align: left;"><b>CogVLM</b></td>
+              <td>32.1</td>
+              <td>40.8</td>
+              <td>25.3</td>
+              <td>28.0</td>
+              <td>32.0</td>
+              <td>45.0</td>
+              <td>27.6</td>
+            </tr>          
+            <tr style="background-color: #f9f2f8;">
+              <td style="text-align: left;"><b>LLaMA-Adapter2-7B</b></td>
+              <td>29.8</td> 
+              <td>29.2</td>
+              <td>25.3</td> 
+              <td>30.7</td> 
+              <td>30.7</td> 
+              <td>33.3</td> 
+              <td>30.0</td> 
+            </tr>   
+            <tr style="background-color: #f9f2f8;">
+              <td style="text-align: left;"><b>OpenFlamingo2-9B</b></td>
+              <td>28.7</td>
+              <td>40.0</td>
+              <td>28.0</td>
+              <td>23.3</td>
+              <td>27.3</td>
+              <td>30.8</td>
+              <td>26.2</td>
+            </tr>    
+            <tr style="background-color: #f9f2f8;">
+              <td style="text-align: left;"><b>Fuyu-8B</b></td>
+              <td>27.9</td>
+              <td>36.7</td>
+              <td><b>32.0</b></td>
+              <td>22.0</td>
+              <td>28.0</td>
+              <td>32.5</td>
+              <td>21.4</td>
+           </tr>    
+           <tr style="background-color: #f9f2f8;">
+              <td style="text-align: left;"><b>MiniGPT4-Vicuna-13B</b></td>
+              <td>26.8</td>
+              <td>29.2</td>
+              <td>21.3</td>
+              <td>28.7</td>
+              <td>30.7</td>
+              <td>29.2</td>
+              <td>23.8</td>
+            </tr>
+            <tr style="background-color: #f4f9fe;">
+              <td style="color: #808080;text-align: left;">Frequent Choice</td>
+              <td style="color: #808080;">26.8</td>
+              <td style="color: #808080;">23.3</td>
+              <td style="color: #808080;">29.3</td>
+              <td style="color: #808080;">27.3</td>
+              <td style="color: #808080;">30.0</td>
+              <td style="color: #808080;">25.8</td>
+              <td style="color: #808080;">24.8</td>
+            </tr>   
+            <tr style="background-color: #edfbff;">
+              <td style="text-align: left;"><b>Gemini Nano2</b></td>
+              <td>26.3</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td></td>
+            </tr>
+            <tr style="background-color: #f9f2f8;">
+              <td style="text-align: left;"><b>Kosmos2</b></td>
+              <td>24.4</td>
+              <td>25.0</td>
+              <td>18.0</td>
+              <td>19.3</td>
+              <td>28.0</td>
+              <td>30.0</td>
+              <td>26.7</td>
+            </tr>            
+            <tr style="background-color: #f4f9fe;">
+              <td style="color: #808080;text-align: left;">Random Choice</td>
+              <td style="color: #808080;">22.1</td>
+              <td style="color: #808080;">29.2</td>
+              <td style="color: #808080;">24.7</td>
+              <td style="color: #808080;">18.0</td>
+              <td style="color: #808080;">20.7</td>
+              <td style="color: #808080;">20.0</td>
+              <td style="color: #808080;">21.4</td>
+            </tr>          
+                                 
+            <!-- <tr>
+              <td colspan="8" style="font-size: 18px;"><b>Large Language Models (LLMs): Only Text as Input</b></td>
+            </tr>               -->
+            <!-- <tr style="background-color: #f8fffe;">
+              <td style="text-align: left;"><b>Llama2 7B</b></td>
+              <td>30.1</td>
+              <td>29.2</td>
+              <td>22.7</td>
+              <td>34.0</td>
+              <td>26.7</td>
+              <td>37.5</td>
+              <td>31.4</td>
+            </tr>
+          
+            <tr style="background-color: #f4fdf5;">
+              <td style="text-align: left;"><b>FLAN-T5-XXL</b></td>
+              <td>32.1</td>
+              <td>38.3</td>
+              <td>28.0</td>
+              <td>28.0</td>
+              <td>32.0</td>
+              <td>42.5</td>
+              <td>28.6</td>
+            </tr>            
+            <tr style="background-color: #f4fdf5;">
+              <td style="text-align: left;"><b>FLAN-T5-XXL + OCR</b></td>
+              <td>34.7</td>
+              <td>37.5</td>
+              <td>29.3</td>
+              <td>30.0</td>
+              <td><b>32.7</b></td>
+              <td><b>55.0</b></td>
+              <td><b>30.0</b></td>
+            </tr>
+          
+            <tr style="background-color: #f4fdf5;">
+              <td style="text-align: left;"><b>FLAN-T5-XXL + LLaVA Caption</b></td>
+              <td><b>34.8</b></td>
+              <td><b>43.3</b></td>
+              <td><b>31.3</b></td>
+              <td><b>32.7</b></td>
+              <td>32.0</td>
+              <td>49.2</td>
+              <td>27.6</td>
+            </tr>
+          
+            <tr style="background-color: #e7fde9;">
+              <td style="text-align: left;"><b>Vicuna-13B</b></td>
+              <td>33.3</td>
+              <td><b>41.7</b></td>
+              <td>26.7</td>
+              <td>23.3</td>
+              <td>31.3</td>
+              <td>45.8</td>
+              <td><b>34.8</b></td>
+            </tr>
+          
+            <tr style="background-color: #e7fde9;">
+              <td style="text-align: left;"><b>Vicuna-13B + OCR</b></td>
+              <td><b>35.4</b></td>
+              <td>39.2</td>
+              <td><b>31.3</b></td>
+              <td><b>30.0</b></td>
+              <td>31.3</td>
+              <td><b>50.0</b></td>
+              <td><b>34.8</b></td>
+            </tr>
+          
+            <tr style="background-color: #e7fde9;">
+              <td style="text-align: left;"><b>Vicuna-13B + LLaVA Caption</b></td>
+              <td>33.9</td>
+              <td>38.3</td>
+              <td>26.0</td>
+              <td>28.7</td>
+              <td><b>34.0</b></td>
+              <td>48.3</td>
+              <td>32.4</td>
+            </tr> -->
+          
+
+            <!-- <tr style="background-color: #f8fffe;">
+              <td style="text-align: left;"><b>GPT-4 Text</b></td>
+              <td>34.9</td>
+              <td>35.0</td>
+              <td>36.7</td>
+              <td>34.7</td>
+              <td>40.7</td>
+              <td>51.7</td>
+              <td>20.0</td>
+            </tr>           -->
+        </table>
+
+          <table id="table2" class="js-sort-table hidden">
             <tr>
               <td class="js-sort-number"><strong>Reset</strong></td>
               <td class="js-sort-number"><strong>Overall</strong></td>
@@ -686,289 +990,7 @@
           </table>
 
 
-          <table id="table2" class="js-sort-table hidden">
-            <tr>
-              <td class="js-sort-number"><strong>Reset</strong></td>
-              <td class="js-sort-number"><strong>Overall</strong></td>
-              <td class="js-sort-number"><strong>Art & Design</strong></td>
-              <td class="js-sort-number"><strong>Business</strong></td>
-              <td class="js-sort-number"><strong>Science</strong></td>
-              <td class="js-sort-number"><strong>Health & Medicine</strong></td>
-              <td class="js-sort-number"><strong>Human. & Social Sci.</strong></td>
-              <td class="js-sort-number"><strong>Tech & Eng.</strong></td>
-            </tr>
-            <tr style="background-color: #f8fffe;">
-              <td style="text-align: left;"><b>Gemini Ultra</b></td>
-              <td><b>59.4</b></td>
-              <td><b>70.0</b></td>
-              <td>56.7</td>
-              <td>48.0</td>
-              <td><b>67.3</b></td>
-              <td><b>78.3</b></td>
-              <td><b>47.1</b></td>
-            </tr>
-            <tr style="background-color: #f8fffe;">
-              <td style="text-align: left;"><b>GPT-4V(ision) (Playground)</b></td>
-              <td>56.8</td>
-              <td>65.8</td>
-              <td><b>59.3</b></td>
-              <td><b>54.7</b></td>
-              <td>64.7</td>
-              <td>72.5</td>
-              <td>36.7</td>
-            </tr>
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;"><b>LLaVA-1.5-13B</b></td>
-              <td><b>36.4</b></td>
-              <td><b>51.7</b></td>
-              <td>22.7</td>
-              <td>29.3</td>
-              <td><b>38.7</b></td>
-              <td><b>53.3</b></td>
-              <td>31.4</td>
-            </tr> 
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;"><b>Qwen-VL-7B</b></td>
-              <td style="text-decoration: underline;">35.9</td>
-              <td><b>51.7</b></td>
-              <td>29.3</td>
-              <td>29.3</td>
-              <td>33.3</td>
-              <td>45.0</td>
-              <td style="text-decoration: underline;">32.9</td>
-            </tr>  
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;"><b>InstructBLIP-T5-XXL</b></td>
-              <td>35.7</td>
-              <td>44.2</td>
-              <td>24.0</td>
-              <td>30.7</td>
-              <td style="text-decoration: underline;">35.3</td>
-              <td>49.2</td>
-              <td><b>35.2</b></td>
-            </tr>            
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;"><b>BLIP-2 FLAN-T5-XXL</b></td>
-              <td>35.4</td>
-              <td>41.7</td>
-              <td style="text-decoration: underline;">30.0</td>
-              <td><b>34.7</b></td>
-              <td>32.0</td>
-              <td style="text-decoration: underline;">50.8</td>
-              <td>30.0</td>
-            </tr>
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;"><b>BLIP-2 FLAN-T5-XL</b></td>
-              <td>34.4</td>
-              <td>44.2</td>
-              <td>26.7</td>
-              <td>30.7</td>
-              <td style="text-decoration: underline;">35.3</td>
-              <td>50.0</td>
-              <td>27.6</td>
-            </tr>   
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;"><b>InstructBLIP-T5-XL</b></td>
-              <td>32.9</td>
-              <td>40.0</td>
-              <td>28.0</td>
-              <td>32.7</td>
-              <td>28.7</td>
-              <td>47.5</td>
-              <td>27.1</td>
-            </tr>    
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;"><b>mPLUG-OWL2</b></td>
-              <td>32.7</td>
-              <td>45.8</td>
-              <td>24.7</td>
-              <td>22.7</td>
-              <td>32.0</td>
-              <td>45.8</td>
-              <td>31.0</td>
-            </tr>  
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;"><b>Otter</b></td>
-              <td>32.2</td>
-              <td>37.5</td>
-              <td>24.0</td>
-              <td><b>34.7</b></td>
-              <td>30.7</td>
-              <td>41.7</td>
-              <td>29.0</td>
-            </tr>          
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;"><b>CogVLM</b></td>
-              <td>32.1</td>
-              <td>40.8</td>
-              <td>25.3</td>
-              <td>28.0</td>
-              <td>32.0</td>
-              <td>45.0</td>
-              <td>27.6</td>
-            </tr>          
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;"><b>LLaMA-Adapter2-7B</b></td>
-              <td>29.8</td> 
-              <td>29.2</td>
-              <td>25.3</td> 
-              <td>30.7</td> 
-              <td>30.7</td> 
-              <td>33.3</td> 
-              <td>30.0</td> 
-            </tr>   
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;"><b>OpenFlamingo2-9B</b></td>
-              <td>28.7</td>
-              <td>40.0</td>
-              <td>28.0</td>
-              <td>23.3</td>
-              <td>27.3</td>
-              <td>30.8</td>
-              <td>26.2</td>
-            </tr>    
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;"><b>Fuyu-8B</b></td>
-              <td>27.9</td>
-              <td>36.7</td>
-              <td><b>32.0</b></td>
-              <td>22.0</td>
-              <td>28.0</td>
-              <td>32.5</td>
-              <td>21.4</td>
-           </tr>    
-           <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;"><b>MiniGPT4-Vicuna-13B</b></td>
-              <td>26.8</td>
-              <td>29.2</td>
-              <td>21.3</td>
-              <td>28.7</td>
-              <td>30.7</td>
-              <td>29.2</td>
-              <td>23.8</td>
-            </tr>
-            <tr style="background-color: #f4f9fe;">
-              <td style="color: #808080;text-align: left;">Frequent Choice</td>
-              <td style="color: #808080;">26.8</td>
-              <td style="color: #808080;">23.3</td>
-              <td style="color: #808080;">29.3</td>
-              <td style="color: #808080;">27.3</td>
-              <td style="color: #808080;">30.0</td>
-              <td style="color: #808080;">25.8</td>
-              <td style="color: #808080;">24.8</td>
-            </tr>   
-            <tr style="background-color: #f9f2f8;">
-              <td style="text-align: left;"><b>Kosmos2</b></td>
-              <td>24.4</td>
-              <td>25.0</td>
-              <td>18.0</td>
-              <td>19.3</td>
-              <td>28.0</td>
-              <td>30.0</td>
-              <td>26.7</td>
-            </tr>            
-            <tr style="background-color: #f4f9fe;">
-              <td style="color: #808080;text-align: left;">Random Choice</td>
-              <td style="color: #808080;">22.1</td>
-              <td style="color: #808080;">29.2</td>
-              <td style="color: #808080;">24.7</td>
-              <td style="color: #808080;">18.0</td>
-              <td style="color: #808080;">20.7</td>
-              <td style="color: #808080;">20.0</td>
-              <td style="color: #808080;">21.4</td>
-            </tr>          
-                                 
-            <!-- <tr>
-              <td colspan="8" style="font-size: 18px;"><b>Large Language Models (LLMs): Only Text as Input</b></td>
-            </tr>               -->
-            <!-- <tr style="background-color: #f8fffe;">
-              <td style="text-align: left;"><b>Llama2 7B</b></td>
-              <td>30.1</td>
-              <td>29.2</td>
-              <td>22.7</td>
-              <td>34.0</td>
-              <td>26.7</td>
-              <td>37.5</td>
-              <td>31.4</td>
-            </tr>
-          
-            <tr style="background-color: #f4fdf5;">
-              <td style="text-align: left;"><b>FLAN-T5-XXL</b></td>
-              <td>32.1</td>
-              <td>38.3</td>
-              <td>28.0</td>
-              <td>28.0</td>
-              <td>32.0</td>
-              <td>42.5</td>
-              <td>28.6</td>
-            </tr>            
-            <tr style="background-color: #f4fdf5;">
-              <td style="text-align: left;"><b>FLAN-T5-XXL + OCR</b></td>
-              <td>34.7</td>
-              <td>37.5</td>
-              <td>29.3</td>
-              <td>30.0</td>
-              <td><b>32.7</b></td>
-              <td><b>55.0</b></td>
-              <td><b>30.0</b></td>
-            </tr>
-          
-            <tr style="background-color: #f4fdf5;">
-              <td style="text-align: left;"><b>FLAN-T5-XXL + LLaVA Caption</b></td>
-              <td><b>34.8</b></td>
-              <td><b>43.3</b></td>
-              <td><b>31.3</b></td>
-              <td><b>32.7</b></td>
-              <td>32.0</td>
-              <td>49.2</td>
-              <td>27.6</td>
-            </tr>
-          
-            <tr style="background-color: #e7fde9;">
-              <td style="text-align: left;"><b>Vicuna-13B</b></td>
-              <td>33.3</td>
-              <td><b>41.7</b></td>
-              <td>26.7</td>
-              <td>23.3</td>
-              <td>31.3</td>
-              <td>45.8</td>
-              <td><b>34.8</b></td>
-            </tr>
-          
-            <tr style="background-color: #e7fde9;">
-              <td style="text-align: left;"><b>Vicuna-13B + OCR</b></td>
-              <td><b>35.4</b></td>
-              <td>39.2</td>
-              <td><b>31.3</b></td>
-              <td><b>30.0</b></td>
-              <td>31.3</td>
-              <td><b>50.0</b></td>
-              <td><b>34.8</b></td>
-            </tr>
-          
-            <tr style="background-color: #e7fde9;">
-              <td style="text-align: left;"><b>Vicuna-13B + LLaVA Caption</b></td>
-              <td>33.9</td>
-              <td>38.3</td>
-              <td>26.0</td>
-              <td>28.7</td>
-              <td><b>34.0</b></td>
-              <td>48.3</td>
-              <td>32.4</td>
-            </tr> -->
-          
-
-            <!-- <tr style="background-color: #f8fffe;">
-              <td style="text-align: left;"><b>GPT-4 Text</b></td>
-              <td>34.9</td>
-              <td>35.0</td>
-              <td>36.7</td>
-              <td>34.7</td>
-              <td>40.7</td>
-              <td>51.7</td>
-              <td>20.0</td>
-            </tr>           -->
-        </table>
+        
 
 
             <p> Overall results of different models on the MMMU test set. Besides reporting the performance of LMMs, we additionally add
