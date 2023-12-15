@@ -96,9 +96,17 @@
             and Reasoning Benchmark for Expert AGI
           </h2>
           <div class="is-size-5 publication-authors">
-            <span class="author-block">Xiang Yue*<sup style="color:#6fbf73;">†,1</sup>,</span>
+            <!-- <span class="author-block">Xiang Yue*<sup style="color:#6fbf73;">†,1</sup>,</span> -->
+            <span class="author-block">
+              <a href="https://xiangyue9607.github.io/" style="text-decoration: none; color: inherit;">Xiang Yue*</a>
+              <sup style="color:#6fbf73;">†,1</sup>,
+            </span>
             <span class="author-block">Yuansheng Ni*<sup style="color:#ffac33;">2</sup>,</span>
-            <span class="author-block">Kai Zhang*<sup style="color:#ed4b82;">3</sup>,</span>
+            <span class="author-block">
+              <a href="https://drogozhang.github.io/" style="text-decoration: none; color: inherit;">Kai Zhang*</a>
+              <sup style="color:#ed4b82;">3</sup>,
+            </span>
+            <!-- <span class="author-block">Kai Zhang*<sup style="color:#ed4b82;">3</sup>,</span> -->
             <span class="author-block">Tianyu Zheng*<sup style="color:#007bff;">4</sup>,</span><br>
             <span class="author-block">Ruoqi Liu<sup style="color:#ed4b82;">3</sup>,</span>
             <span class="author-block">Ge Zhang<sup style="color:#ffac33;">2</sup>,</span>
@@ -115,9 +123,22 @@
             <span class="author-block">Zhenzhu Yang<sup style="color:#007bff;">4</sup>,</span>
             <span class="author-block">Yibo Liu<sup style="color:#ed4b82;">6</sup>,</span>
             <span class="author-block">Wenhao Huang<sup style="color:#007bff;">4</sup>,</span><br>
-            <span class="author-block">Huan Sun*<sup style="color:#ed4b82;">3</sup>,</span>
+            <!-- <span class="author-block">Huan Sun*<sup style="color:#ed4b82;">3</sup>,</span>
             <span class="author-block">Yu Su*<sup style="color:#ed4b82;">†,3</sup>,</span>
-            <span class="author-block">Wenhu Chen*<sup style="color:#ffac33;">†,2</sup></span>
+            <span class="author-block">Wenhu Chen*<sup style="color:#ffac33;">†,2</sup></span> -->
+            <span class="author-block">
+              <a href="https://web.cse.ohio-state.edu/~sun.397/" style="text-decoration: none; color: inherit;">Huan Sun*</a>
+              <sup style="color:#ed4b82;">3</sup>,
+          </span>
+          <span class="author-block">
+              <a href="https://ysu1989.github.io/" style="text-decoration: none; color: inherit;">Yu Su*</a>
+              <sup style="color:#ed4b82;">†,3</sup>,
+          </span>
+          <span class="author-block">
+              <a href="https://wenhuchen.github.io/" style="text-decoration: none; color: inherit;">Wenhu Chen*</a>
+              <sup style="color:#ffac33;">†,2</sup>
+          </span>
+          
           </div>
           
           <br>
@@ -418,7 +439,7 @@
             </p>
           </div>
 
-          <button id="toggleButton" onclick="changeButtonText()">Switch to Test Set</button>
+          <button id="toggleButton" onclick="changeButtonText()"><b style='font-size: larger;'>Validation Set Leaderboard</b> (Click to Switch)</button>
           <table id="table1" class="js-sort-table ">
             <tr>
               <td class="js-sort-number"><strong>Reset</strong></td>
@@ -529,7 +550,17 @@
               <td>32.0</td>
               <td>45.8</td>
               <td>31.0</td>
-            </tr>  
+            </tr> 
+            <tr style="background-color: #f9f2f8;">
+              <td style="text-align: left;"><b>SPHINX</b></td>
+              <td>32.9</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td></td>
+            </tr>
             <tr style="background-color: #edfbff;">
               <td style="text-align: left;"><b>Gemini Nano2</b></td>
               <td>32.6</td>
@@ -1734,10 +1765,10 @@
 <script>
   function changeButtonText() {
     var button = document.getElementById('toggleButton');
-    if (button.innerHTML === "Switch to Validation Set") {
-      button.innerHTML = "Switch to Test Set";
+    if (button.innerHTML.includes("Test Set Leaderboard")) {
+      button.innerHTML = "<b style='font-size: larger;'>Validation Set Leaderboard</b> (Click to Switch)";
     } else {
-      button.innerHTML = "Switch to Validation Set";
+      button.innerHTML = "<b style='font-size: larger;'>Test Set Leaderboard</b> (Click to Switch)";
     }
   }
   document.addEventListener('DOMContentLoaded', function() {
