@@ -444,7 +444,13 @@
           </div>
 
           <button id="toggleButton" onclick="changeButtonText()"><b style='font-size: larger;'>Test Set Leaderboard</b> (Click to Switch)</button>
+          <div class="model-labels-container">
+            <!-- <span class="leaderboard-label" style="background-color: #f8fffe;">Open-Source</span>
+            <span class="leaderboard-label" style="background-color: #f9f2f8;">Closed</span> -->
 
+            <span class="leaderboard-label" style="background-color: rgba(249, 242, 248, 1);">Open-Source</span>
+            <span class="leaderboard-label" style="background-color: rgba(117, 209, 215, 0.1);">Closed</span>
+          </div>
           <table id="table1" class="js-sort-table">
             <tr>
               <td class="js-sort-number"><strong>Reset</strong></td>
@@ -456,7 +462,8 @@
               <td class="js-sort-number"><strong>Human. & Social Sci.</strong></td>
               <td class="js-sort-number"><strong>Tech & Eng.</strong></td>
             </tr>
-            <tr style="background-color: #f8fffe;">
+            <!-- <tr style="background-color: #f8fffe;"> -->
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
               <td style="text-align: left;">
                 <a href="https://openai.com/contributions/gpt-4v">
                     <b>GPT-4V(ision) (Playground)</b>
@@ -470,51 +477,55 @@
               <td><b>76.3</b></td>
               <td><b>41.7</b></td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
+            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
               <td style="text-align: left;">
                 <a href="https://github.com/QwenLM/Qwen-VL?tab=readme-ov-file#qwen-vl-plus">
                     <b>Qwen-VL-PLUS*</b>
                 </a>
               </td>
-              <td><b>40.8</b></td>
-              <td><b>59.9</b></td>
-              <td><b>34.5</b></td>
-              <td><b>32.8</b></td>
-              <td><b>43.7</b></td>
-              <td><b>65.5</b></td>
-              <td><b>32.9</b></td>
+              <td style="text-decoration: underline;">40.8</td>
+              <td style="text-decoration: underline;">59.9</td>
+              <td style="text-decoration: underline;">34.5</td>
+              <td style="text-decoration: underline;">32.8</td>
+              <td style="text-decoration: underline;">43.7</td>
+              <td style="text-decoration: underline;">65.5</td>
+              <td style="text-decoration: underline;">32.9</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
+            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <tr style="background-color: rgba(249, 242, 248, 1);">
               <td style="text-align: left;">
                 <a href="https://arxiv.org/abs/2301.12597">
                     <b>BLIP-2 FLAN-T5-XXL</b>
                 </a>
               </td>
               <!-- <td style="text-align: left;"><b>BLIP-2 FLAN-T5-XXL</b></td> -->
-              <td style="text-decoration: underline;">34.0</td>
-              <td>49.2</td>
+              <td><b>34.0</b></td>
+              <td style="text-decoration: underline;">49.2</td>
               <td>28.6</td>
-              <td>27.3</td>
-              <td>33.7</td>
-              <td>51.5</td>
-              <td style="text-decoration: underline;">30.4</td>
+              <td style="text-decoration: underline;">27.3</td>
+              <td style="text-decoration: underline;">33.7</td>
+              <td style="text-decoration: underline;">51.5</td>
+              <td><b>30.4</b></td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
+            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <tr style="background-color: rgba(249, 242, 248, 1);">
               <td style="text-align: left;">
                 <a href="https://arxiv.org/abs/2305.06500">
                     <b>InstructBLIP-T5-XXL</b>
                 </a>
               </td>
               <!-- <td style="text-align: left;"><b>InstructBLIP-T5-XXL</b></td> -->
-              <td>33.8</td>
+              <td style="text-decoration: underline;">33.8</td>
               <td>48.5</td>
-              <td style="text-decoration: underline;">30.6</td>
-              <td style="text-decoration: underline;">27.6</td>
+              <td><b>30.6</td>
+              <td><b>27.6</b></td>
               <td>33.6</td>
               <td>49.8</td>
               <td>29.4</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
+            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <tr style="background-color: rgba(249, 242, 248, 1);">
               <td style="text-align: left;">
                 <a href="https://llava-vl.github.io/">
                     <b>LLaVA-1.5-13B</b>
@@ -522,14 +533,15 @@
               </td>
               <!-- <td style="text-align: left;"><b>LLaVA-1.5-13B</b></td> -->
               <td>33.6</td>
-              <td style="text-decoration: underline;">49.8</td>
+              <td><b>49.8</b></td>
               <td>28.2</td>
               <td>25.9</td>
-              <td style="text-decoration: underline;">34.9</td>
-              <td style="text-decoration: underline;">54.7</td>
+              <td><b>34.9</b></td>
+              <td><b>54.7</b></td>
               <td>28.3</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
+            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <tr style="background-color: rgba(249,242,248, 1);">
               <td style="text-align: left;">
                 <a href="https://arxiv.org/abs/2308.12966">
                     <b>Qwen-VL-7B</b>
@@ -538,13 +550,14 @@
               <!-- <td style="text-align: left;"><b>Qwen-VL-7B</b></td> -->
               <td>32.9</td>
               <td>47.7</td>
-              <td>29.8</td>
+              <td style="text-decoration: underline;">29.8</td>
               <td>25.6</td>
               <td>33.6</td>
               <td>45.3</td>
-              <td>30.2</td>
+              <td style="text-decoration: underline;">30.2</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
+            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <tr style="background-color: rgba(249, 242, 248, 1);">
               <td style="text-align: left;">
                 <a href="https://arxiv.org/abs/2311.04257">
                     <b>mPLUG-OWL2*</b>
@@ -559,7 +572,8 @@
               <td>46.7</td>
               <td>29.4</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
+            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <tr style="background-color: rgba(249, 242, 248, 1);">
               <td style="text-align: left;">
                 <a href="https://arxiv.org/abs/2301.12597">
                     <b>BLIP-2 FLAN-T5-XL</b>
@@ -574,7 +588,8 @@
               <td>48.0</td>
               <td>27.8</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
+            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <tr style="background-color: rgba(249, 242, 248, 1);">
               <td style="text-align: left;">
                 <a href="https://arxiv.org/abs/2305.06500">
                     <b>InstructBLIP-T5-XL</b>
@@ -589,7 +604,8 @@
               <td>45.8</td>
               <td>28.6</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
+            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <tr style="background-color: rgba(249, 242, 248, 1);">
               <td style="text-align: left;">
                 <a href="https://arxiv.org/abs/2311.03079">
                     <b>CogVLM</b>
@@ -604,7 +620,8 @@
               <td>41.5</td>
               <td>28.9</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
+            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <tr style="background-color: rgba(249, 242, 248, 1);">
               <td style="text-align: left;">
                 <a href="https://arxiv.org/abs/2305.03726">
                     <b>Otter</b>
@@ -617,9 +634,10 @@
               <td>24.1</td>
               <td>29.6</td>
               <td>35.9</td>
-              <td>30.2</td>
+              <td style="text-decoration: underline;">30.2</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
+            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <tr style="background-color: rgba(249, 242, 248, 1);">
               <td style="text-align: left;">
                 <a href="https://arxiv.org/abs/2304.15010">
                     <b>LLaMA-Adapter2-7B</b>
@@ -634,7 +652,8 @@
               <td>29.1</td>
               <td>25.7</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
+            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <tr style="background-color: rgba(249, 242, 248, 1);">
               <td style="text-align: left;">
                 <a href="https://minigpt-4.github.io/">
                     <b>MiniGPT4-Vicuna-13B</b>
@@ -649,7 +668,8 @@
               <td>30.9</td>
               <td>27.2</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
+            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <tr style="background-color: rgba(249, 242, 248, 1);">
               <td style="text-align: left;">
                 <a href="https://www.adept.ai/blog/fuyu-8b">
                     <b>Fuyu-8B</b>
@@ -664,7 +684,8 @@
                 <td>32.5</td>
                 <td>26.4</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
+            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <tr style="background-color: rgba(249, 242, 248, 1);">
               <td style="text-align: left;">
                 <a href="https://arxiv.org/abs/2306.14824">
                     <b>Kosmos2</b>
@@ -679,7 +700,8 @@
               <td>26.3</td>
               <td>26.8</td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
+            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <tr style="background-color: rgba(249, 242, 248, 1);">
               <td style="text-align: left;">
                 <a href="https://arxiv.org/abs/2308.01390">
                     <b>OpenFlamingo2-9B</b>
@@ -810,7 +832,8 @@
               <td class="js-sort-number"><strong>Human. & Social Sci.</strong></td>
               <td class="js-sort-number"><strong>Tech & Eng.</strong></td>
             </tr>
-            <tr style="background-color: #f8fffe;">
+            <!-- <tr style="background-color: #f8fffe;"> -->
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
               <td style="text-align: left;">
                 <a href="https://deepmind.google/technologies/gemini/#introduction">
                     <b>Gemini Ultra*</b>
@@ -819,28 +842,30 @@
               <!-- <td style="text-align: left;"><b>Gemini Ultra*</b></td> -->
               <td><b>59.4</b></td>
               <td><b>70.0</b></td>
-              <td>56.7</td>
-              <td>48.0</td>
+              <td style="text-decoration: underline;">56.7</td>
+              <td style="text-decoration: underline;">48.0</td>
               <td><b>67.3</b></td>
               <td><b>78.3</b></td>
               <td><b>47.1</b></td>
             </tr>
-            <tr style="background-color: #f8fffe;">
+            <!-- <tr style="background-color: #f8fffe;"> -->
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
               <td style="text-align: left;">
                 <a href="https://openai.com/contributions/gpt-4v">
                     <b>GPT-4V(ision) (Playground)</b>
                 </a>
               </td>
               <!-- <td style="text-align: left;"><b>GPT-4V(ision) (Playground)</b></td> -->
-              <td>56.8</td>
-              <td>65.8</td>
+              <td style="text-decoration: underline;">56.8</td>
+              <td style="text-decoration: underline;">65.8</td>
               <td><b>59.3</b></td>
               <td><b>54.7</b></td>
-              <td>64.7</td>
-              <td>72.5</td>
-              <td>36.7</td>
+              <td style="text-decoration: underline;">64.7</td>
+              <td style="text-decoration: underline;">72.5</td>
+              <td style="text-decoration: underline;">36.7</td>
             </tr>
-            <tr style="background-color: #f8fffe;">
+            <!-- <tr style="background-color: #f8fffe;"> -->
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
               <td style="text-align: left;">
                 <a href="https://deepmind.google/technologies/gemini/#introduction">
                     <b>Gemini Pro*</b>
@@ -855,21 +880,38 @@
               <td><b>-</b></td>
               <td><b>-</b></td>
             </tr>
-            <tr style="background-color: #f9f2f8;">
+            <!-- <tr style="background-color: #f9f2f8;"> -->
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
               <td style="text-align: left;">
                 <a href="https://github.com/QwenLM/Qwen-VL?tab=readme-ov-file#qwen-vl-plus">
                     <b>Qwen-VL-PLUS*</b>
                 </a>
               </td>
               <!-- <td style="text-align: left;"><b>Qwen-VL-PLUS*</b></td> -->
-              <td><b>45.2</b></td>
-              <td><b>60.0</b></td>
-              <td><b>35.3</b></td>
-              <td><b>37.3</b></td>
-              <td><b>46.7</b></td>
-              <td><b>65.8</b></td>
-              <td><b>36.7</b></td>
+              <td>45.2</td>
+              <td>60.0</td>
+              <td>35.3</td>
+              <td>37.3</td>
+              <td>46.7</td>
+              <td>65.8</td>
+              <td style="text-decoration: underline;">36.7</td>
             </tr>  
+            <!-- <tr style="background-color: #f8fffe;"> -->
+              <tr style="background-color: rgba(117, 209, 215, 0.1);">
+              <td style="text-align: left;">
+                <a href="https://deepmind.google/technologies/gemini/#introduction">
+                    <b>Gemini Nano2*</b>
+                </a>
+              </td>
+              <!-- <td style="text-align: left;"><b>Gemini Nano2*</b></td> -->
+              <td>32.6</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td></td>
+            </tr>
             <tr style="background-color: #f9f2f8;">
               <td style="text-align: left;">
                 <a href="https://llava-vl.github.io/">
@@ -877,12 +919,12 @@
                 </a>
               </td>
               <!-- <td style="text-align: left;"><b>LLaVA-1.5-13B</b></td> -->
-              <td style="text-decoration: underline;">36.4</td>
-              <td style="text-decoration: underline;">51.7</td>
+              <td><b>36.4</b></td>
+              <td><b>51.7</b></td>
               <td>22.7</td>
               <td>29.3</td>
-              <td style="text-decoration: underline;">38.7</td>
-              <td style="text-decoration: underline;">53.3</td>
+              <td><b>38.7</b></td>
+              <td><b>53.3</b></td>
               <td>31.4</td>
             </tr> 
             <tr style="background-color: #f9f2f8;">
@@ -892,13 +934,13 @@
                 </a>
               </td>
               <!-- <td style="text-align: left;"><b>Qwen-VL-7B</b></td> -->
-              <td>35.9</td>
-              <td style="text-decoration: underline;">51.7</td>
+              <td style="text-decoration: underline;">35.9</td>
+              <td><b>51.7</b></td>
               <td>29.3</td>
               <td>29.3</td>
               <td>33.3</td>
               <td>45.0</td>
-              <td>32.9</td>
+              <td style="text-decoration: underline;">32.9</td>
             </tr>  
             <tr style="background-color: #f9f2f8;">
               <td style="text-align: left;">
@@ -911,9 +953,9 @@
               <td>44.2</td>
               <td>24.0</td>
               <td>30.7</td>
-              <td>35.3</td>
+              <td style="text-decoration: underline;">35.3</td>
               <td>49.2</td>
-              <td style="text-decoration: underline;">35.2</td>
+              <td><b>35.2</b></td>
             </tr>            
             <tr style="background-color: #f9f2f8;">
               <td style="text-align: left;">
@@ -924,10 +966,10 @@
               <!-- <td style="text-align: left;"><b>BLIP-2 FLAN-T5-XXL</b></td> -->
               <td>35.4</td>
               <td>41.7</td>
-              <td>30.0</td>
-              <td style="text-decoration: underline;">34.7</td>
+              <td style="text-decoration: underline;">30.0</td>
+              <td><b>34.7</b></td>
               <td>32.0</td>
-              <td>50.8</td>
+              <td style="text-decoration: underline;">50.8</td>
               <td>30.0</td>
             </tr>
             <tr style="background-color: #f9f2f8;">
@@ -941,7 +983,7 @@
               <td>44.2</td>
               <td>26.7</td>
               <td>30.7</td>
-              <td>35.3</td>
+              <td style="text-decoration: underline;">35.3</td>
               <td>50.0</td>
               <td>27.6</td>
             </tr>   
@@ -955,7 +997,7 @@
               <td>32.9</td>
               <td>40.0</td>
               <td>28.0</td>
-              <td>32.7</td>
+              <td style="text-decoration: underline;">32.7</td>
               <td>28.7</td>
               <td>47.5</td>
               <td>27.1</td>
@@ -968,7 +1010,7 @@
               </td>
               <!-- <td style="text-align: left;"><b>mPLUG-OWL2*</b></td> -->
               <td>32.7</td>
-              <td>45.8</td>
+              <td style="text-decoration: underline;">45.8</td>
               <td>24.7</td>
               <td>22.7</td>
               <td>32.0</td>
@@ -990,21 +1032,6 @@
               <td>-</td>
               <td></td>
             </tr>
-            <tr style="background-color: #f8fffe;">
-              <td style="text-align: left;">
-                <a href="https://deepmind.google/technologies/gemini/#introduction">
-                    <b>Gemini Nano2*</b>
-                </a>
-              </td>
-              <!-- <td style="text-align: left;"><b>Gemini Nano2*</b></td> -->
-              <td>32.6</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td></td>
-            </tr>
             <tr style="background-color: #f9f2f8;">
               <td style="text-align: left;">
                 <a href="https://arxiv.org/abs/2305.03726">
@@ -1015,7 +1042,7 @@
               <td>32.2</td>
               <td>37.5</td>
               <td>24.0</td>
-              <td style="text-decoration: underline;">34.7</td>
+              <td><b>34.7</b></td>
               <td>30.7</td>
               <td>41.7</td>
               <td>29.0</td>
@@ -1074,7 +1101,7 @@
               <!-- <td style="text-align: left;"><b>Fuyu-8B</b></td> -->
               <td>27.9</td>
               <td>36.7</td>
-              <td style="text-decoration: underline;">32.0</td>
+              <td><b>32.0</b></td>
               <td>22.0</td>
               <td>28.0</td>
               <td>32.5</td>

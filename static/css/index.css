@@ -186,8 +186,8 @@ body {
 
 .model-labels-container {
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px; 
+  margin-top: 8px;
+  margin-bottom: 8px; 
 }
 
 .model-label {
@@ -196,6 +196,14 @@ body {
   margin: 5px;
   border-radius: 3px;
   color: rgb(255, 255, 255);
+}
+
+.leaderboard-label {
+  display: inline-block;
+  padding: 4px 10px;
+  margin: 5px;
+  border-radius: 3px;
+  color: rgb(48, 48, 48);
 }
 
 .box {
