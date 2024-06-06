@@ -2101,6 +2101,21 @@
     </div>
   </div>
 </div>
+<!-------------------------------------------------------------------- Single VS Multiple image SECTION -------------------------------------------------------------------->
+<div class="columns is-centered m-6">
+  <div class="column is-full has-text-centered content">
+    <h2 class="title is-3">Single Image VS Multiple Image</h2>
+    <div class="content has-text-justified">
+      <!-- <p>
+        We compare the performance of selected models across single image and multiple image tasks.
+      </p> -->
+    </div>
+    <div class="content has-text-centered">
+      <canvas id="single_vs_multiple_chart"></canvas>
+      <p>Result decomposition across single image and multiple image tasks.</p>
+    </div>
+  </div>
+</div>
 <!-------------------------------------------------------------------- Error Analysis SECTION -------------------------------------------------------------------->
     <div class="columns is-centered m-6">
       <div class="column is-full has-text-centered content">
@@ -2788,6 +2803,83 @@
       }
     }
   });
+
+  const canvas_image = document.getElementById('single_vs_multiple_chart');
+  canvas_image.style.width = '500px';
+  canvas_image.style.height = '120px';
+  const svm = document.getElementById('single_vs_multiple_chart').getContext('2d');
+  const single_vs_multiple_chart = new Chart(svm, {
+    type: 'bar',
+    data: {
+      labels: ['Yi-VL-34B', 'LLaVA-1.6-34B', 'InternVL-Chat-V1.2', 'VILA1.5', 'GPT-4V(ision) (Playground)'],
+      datasets: [{
+        label: 'Single Image',
+        data: [42, 45.1, 46.9, 47, 56.1],
+        backgroundColor: 'rgba(42, 149, 235, 0.6)', 
+        borderColor: 'rgba(42, 149, 235, 1)',
+        borderWidth: 1,
+        hoverBackgroundColor: 'rgba(42, 149, 235, 1)'
+      },
+      {
+        label: 'Multiple Image',
+        data: [36.6, 40, 38.4, 45.9, 51.7],
+        backgroundColor: 'rgba(255, 153, 78, 0.6)', 
+        borderColor: 'rgba(255, 153, 78, 1)',
+        borderWidth: 1,
+        hoverBackgroundColor: 'rgba(255, 153, 78, 1)'
+      },
+      {
+        label: 'Overall',
+        data: [41.6, 44.7, 46.2, 46.9, 55.7],
+        backgroundColor: 'rgba(110, 194, 134, 0.6)',  
+        borderColor: 'rgba(110, 194, 134, 1)',
+        borderWidth: 1,
+        hoverBackgroundColor: 'rgba(110, 194, 134, 1)'
+      }]
+    },
+    options: {
+    scales: {
+      y: {
+        beginAtZero: true,
+        min: 0,
+        max: 100,
+        ticks: {
+          stepSize: 20,
+          font: {
+            size: 16
+          }
+        }
+      },
+      x: {
+        ticks: {
+          font: {
+            size: 16 
+          }
+        }
+      }
+    },
+    plugins: {
+      legend: {
+        labels: {
+          font: {
+            size: 16 
+          }
+        }
+      },
+      tooltip: {
+        callbacks: {
+          label: function(context) {
+            return context.dataset.label + ': ' + context.parsed.y;
+          }
+        }
+      }
+    },
+      onHover: (event, chartElement) => {
+        event.native.target.style.cursor = chartElement[0] ? 'pointer' : 'default';
+      }
+    }
+  });
+
 
   document.addEventListener('DOMContentLoaded', function() {
     // Data for the "Diagrams" chart
