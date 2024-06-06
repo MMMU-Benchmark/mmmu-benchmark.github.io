@@ -2811,10 +2811,10 @@
   const single_vs_multiple_chart = new Chart(svm, {
     type: 'bar',
     data: {
-      labels: ['Yi-VL-34B', 'LLaVA-1.6-34B', 'InternVL-Chat-V1.2', 'VILA1.5', 'GPT-4V(ision) (Playground)'],
+      labels: ['InternLM-XComposer2-VL', 'Yi-VL-34B', 'LLaVA-1.6-34B', 'InternVL-Chat-V1.2', 'VILA1.5', 'GPT-4V(ision) (Playground)'],
       datasets: [{
         label: 'Single Image',
-        data: [42, 45.1, 46.9, 47, 56.1],
+        data: [38.6, 42, 45.1, 46.9, 47, 56.1],
         backgroundColor: 'rgba(42, 149, 235, 0.6)', 
         borderColor: 'rgba(42, 149, 235, 1)',
         borderWidth: 1,
@@ -2822,7 +2822,7 @@
       },
       {
         label: 'Multiple Image',
-        data: [36.6, 40, 38.4, 45.9, 51.7],
+        data: [34.5, 36.6, 40, 38.4, 45.9, 51.7],
         backgroundColor: 'rgba(255, 153, 78, 0.6)', 
         borderColor: 'rgba(255, 153, 78, 1)',
         borderWidth: 1,
@@ -2830,7 +2830,7 @@
       },
       {
         label: 'Overall',
-        data: [41.6, 44.7, 46.2, 46.9, 55.7],
+        data: [38.2, 41.6, 44.7, 46.2, 46.9, 55.7],
         backgroundColor: 'rgba(110, 194, 134, 0.6)',  
         borderColor: 'rgba(110, 194, 134, 1)',
         borderWidth: 1,
@@ -2842,7 +2842,7 @@
       y: {
         beginAtZero: true,
         min: 0,
-        max: 100,
+        max: 80,
         ticks: {
           stepSize: 20,
           font: {
