@@ -2753,7 +2753,7 @@
         hoverBackgroundColor: 'rgba(172, 199, 176, 1)'
       },
       {
-        label: 'GPT-4V',
+        label: 'GPT-4V(ision) (Playground)',
         data: [76.1, 55.6, 31.2, 55.7],
         backgroundColor: 'rgba(117, 209, 215, 0.6)',
         borderColor: 'rgba(117, 209, 215, 1)',
@@ -2811,30 +2811,56 @@
   const single_vs_multiple_chart = new Chart(svm, {
     type: 'bar',
     data: {
-      labels: ['InternLM-XComposer2-VL', 'Yi-VL-34B', 'LLaVA-1.6-34B', 'InternVL-Chat-V1.2', 'VILA1.5', 'GPT-4V(ision) (Playground)'],
-      datasets: [{
-        label: 'Single Image',
-        data: [38.6, 42, 45.1, 46.9, 47, 56.1],
-        backgroundColor: 'rgba(42, 149, 235, 0.6)', 
-        borderColor: 'rgba(42, 149, 235, 1)',
-        borderWidth: 1,
-        hoverBackgroundColor: 'rgba(42, 149, 235, 1)'
-      },
+      labels: ['Single Image', 'Multiple Image', 'Overall'],
+      datasets: [
+      
       {
-        label: 'Multiple Image',
-        data: [34.5, 36.6, 40, 38.4, 45.9, 51.7],
-        backgroundColor: 'rgba(255, 153, 78, 0.6)', 
+        label: 'InternLM-XComposer2-VL',
+        data: [38.6, 34.5, 38.2],
+        backgroundColor: 'rgba(255, 153, 78, 0.6)',
         borderColor: 'rgba(255, 153, 78, 1)',
         borderWidth: 1,
         hoverBackgroundColor: 'rgba(255, 153, 78, 1)'
       },
       {
-        label: 'Overall',
-        data: [38.2, 41.6, 44.7, 46.2, 46.9, 55.7],
-        backgroundColor: 'rgba(110, 194, 134, 0.6)',  
-        borderColor: 'rgba(110, 194, 134, 1)',
+        label: 'Yi-VL-34B',
+        data: [42.0, 36.6, 41.6],
+        backgroundColor: 'rgba(42, 149, 235, 0.6)',
+        borderColor: 'rgba(42, 149, 235, 1)',
         borderWidth: 1,
-        hoverBackgroundColor: 'rgba(110, 194, 134, 1)'
+        hoverBackgroundColor: 'rgba(42, 149, 235, 1)'
+      },
+      {
+        label: 'LLaVA-1.6-34B',
+        data: [45.1, 40.0, 44.7],
+        backgroundColor: 'rgba(183, 156, 220, 0.6)',
+        borderColor: 'rgba(183, 156, 220, 1)',
+        borderWidth: 1,
+        hoverBackgroundColor: 'rgba(183, 156, 220, 1)'
+      },
+      {
+        label: 'InternVL-Chat-V1.2',
+        data: [46.9, 38.4, 46.2],
+        backgroundColor: 'rgba(143, 169, 209, 0.6)',
+        borderColor: 'rgba(143, 169, 209, 1)',
+        borderWidth: 1,
+        hoverBackgroundColor: 'rgba(143, 169, 209, 1)'
+      },
+      {
+        label: 'VILA1.5',
+        data: [47.0, 45.9, 46.9],
+        backgroundColor: 'rgba(172, 199, 176, 0.6)',
+        borderColor: 'rgba(172, 199, 176, 1)',
+        borderWidth: 1,
+        hoverBackgroundColor: 'rgba(172, 199, 176, 1)'
+      },
+      {
+        label: 'GPT-4V(ision) (Playground)',
+        data: [56.1, 51.7, 55.7],
+        backgroundColor: 'rgba(117, 209, 215, 0.6)',
+        borderColor: 'rgba(117, 209, 215, 1)',
+        borderWidth: 1,
+        hoverBackgroundColor: 'rgba(117, 209, 215, 1)'
       }]
     },
     options: {
