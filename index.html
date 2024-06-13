@@ -1311,6 +1311,7 @@
               <td style="color: #808080;">21.4</td>
             </tr>
           </table>
+            <p class="validation-desc"> Overall results of different models on the MMMU validation set. The best-performing model in each category is <b>in-bold</b>, and the second best is <u>underlined</u>. *: results provided by the authors.</p>
           <!-- Test Set Leaderboard -->
           <table id="table2" class="js-sort-table hidden">
             <tr>
@@ -1894,8 +1895,7 @@
               <td style="color: #808080;">24.8</td>
             </tr>
           </table>
-          
-            <p> Overall results of different models on the MMMU test set. The best-performing model in each category is <b>in-bold</b>, and the second best is <u>underlined</u>. *: results provided by the authors.</p>
+            <p class="test-desc hidden"> Overall results of different models on the MMMU test set. The best-performing model in each category is <b>in-bold</b>, and the second best is <u>underlined</u>. *: results provided by the authors.</p>
         </div>
       </div>
     </div>
@@ -2668,6 +2668,11 @@
       var table2 = document.getElementById('table2');
       table1.classList.toggle('hidden');
       table2.classList.toggle('hidden');
+      
+      var desc1 = document.querySelector('p.validation-desc');
+      var desc2 = document.querySelector('p.test-desc');
+      desc1.classList.toggle('hidden');
+      desc2.classList.toggle('hidden');
   }
 
   document.getElementById('toggleButton').addEventListener('click', toggleTables);
