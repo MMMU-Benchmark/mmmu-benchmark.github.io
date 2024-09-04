@@ -833,6 +833,16 @@
         "humanSocialSci": "62.5",
         "techEng": "31.9",
         "source": "author"
+      },
+      "test": {
+        "overall": "37.8",
+        "artDesign": "55.0",
+        "business": "30.7",
+        "science": "28.0",
+        "healthMedicine": "40.4",
+        "humanSocialSci": "57.6",
+        "techEng": "34.4",
+        "source": "author"
       }
     },
     {
@@ -1774,6 +1784,65 @@
         "healthMedicine": "57.0",
         "humanSocialSci": "74.9",
         "techEng": "41.8",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "360VL",
+        "size": "70B",
+        "date": "2024-05-21",
+        "type": "open_source",
+        "link": "https://github.com/360CVGroup/360VL"
+      },
+      "validation": {
+        "overall": "50.8",
+        "source": "author"
+      },
+      "test": {
+        "overall": "44.3",
+        "artDesign": "59.1",
+        "business": "36.4",
+        "science": "36.6",
+        "healthMedicine": "49.2",
+        "humanSocialSci": "70.4",
+        "techEng": "36.9",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Ovis-Clip-Llama3-8B",
+        "size": "8B",
+        "date": "2024-06-14",
+        "type": "open_source",
+        "link": "https://github.com/AIDC-AI/Ovis"
+      },
+      "validation": {
+        "overall": "48.6",
+        "source": "author"
+      },
+      "test": {
+        "overall": "39.0",
+        "artDesign": "54.3",
+        "business": "33.3",
+        "science": "31.7",
+        "healthMedicine": "42.4",
+        "humanSocialSci": "63.6",
+        "techEng": "31.4",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Ovis1.5-Gemma2-9B",
+        "size": "9B",
+        "date": "2024-06-14",
+        "type": "open_source",
+        "link": "https://github.com/AIDC-AI/Ovis"
+      },
+      "validation": {
+        "overall": "49.8",
         "source": "author"
       }
     },
