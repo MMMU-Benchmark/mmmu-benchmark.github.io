@@ -2,7 +2,7 @@
   "leaderboardData": [
     {
       "info": {
-        "name": "Human Expert (Best)",
+        "name": "Human Expert (High)",
         "size": "-",
         "date": "2024-01-31",
         "type": "human_expert"
@@ -15,6 +15,11 @@
         "healthMedicine": "87.3",
         "humanSocialSci": "89.2",
         "techEng": "86.2"
+      },
+      "pro": {
+        "overall": "87.5",
+        "vision": "87.5",
+        "original": "87.5"
       }
     },
     {
@@ -32,11 +37,16 @@
         "healthMedicine": "78.8",
         "humanSocialSci": "85.0",
         "techEng": "79.1"
+      },
+      "pro": {
+        "overall": "81.1",
+        "vision": "81.1",
+        "original": "81.1"
       }
     },
     {
       "info": {
-        "name": "Human Expert (Worst)",
+        "name": "Human Expert (Low)",
         "size": "-",
         "date": "2024-01-31",
         "type": "human_expert"
@@ -49,6 +59,11 @@
         "healthMedicine": "73.3",
         "humanSocialSci": "74.2",
         "techEng": "74.3"
+      },
+      "pro": {
+        "overall": "74.4",
+        "vision": "74.4",
+        "original": "74.4"
       }
     },
     {
@@ -1718,6 +1733,23 @@
     },
     {
       "info": {
+        "name": "Qwen2-VL-72B",
+        "size": "72B",
+        "date": "2024-08-29",
+        "type": "proprietary",
+        "link": "https://github.com/QwenLM/Qwen2-VL"
+      },
+      "validation": {
+        "overall": "64.5"
+      },
+      "pro": {
+        "overall": "46.2",
+        "vision": "43.3",
+        "original": "49.2"
+      }
+    },
+    {
+      "info": {
         "name": "RBDash V1.2",
         "size": "72B",
         "date": "2024-08-21",
@@ -1769,6 +1801,11 @@
         "healthMedicine": "25.3",
         "humanSocialSci": "22.8",
         "techEng": "24.8"
+      },
+      "pro": {
+        "overall": "12.1",
+        "vision": "12.1",
+        "original": "12.1"
       }
     },
     {
@@ -1795,6 +1832,11 @@
         "healthMedicine": "24.4",
         "humanSocialSci": "25.2",
         "techEng": "26.5"
+      },
+      "pro": {
+        "overall": "12.6",
+        "vision": "12.4",
+        "original": "12.8"
       }
     }
   ]
