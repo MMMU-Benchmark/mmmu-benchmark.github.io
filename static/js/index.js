@@ -150,7 +150,7 @@ function resetTable() {
   document.querySelector('.val-details-cell').setAttribute('colspan', '1');
   document.querySelector('.test-details-cell').setAttribute('colspan', '1');
 
-  var valOverallHeader = document.querySelector('#mmmu-table thead tr:last-child th.pro-overall');
+  var valOverallHeader = document.querySelector('#mmmu-table thead tr:last-child th.val-overall');
   sortTable(valOverallHeader, true);
 
   setTimeout(adjustNameColumnWidth, 0);
@@ -214,7 +214,7 @@ function getCellValue(row, index) {
 }
 
 function initializeSorting() {
-  var valOverallHeader = document.querySelector('#mmmu-table thead tr:last-child th.pro-overall');
+  var valOverallHeader = document.querySelector('#mmmu-table thead tr:last-child th.val-overall');
   sortTable(valOverallHeader, true);
 }
 
