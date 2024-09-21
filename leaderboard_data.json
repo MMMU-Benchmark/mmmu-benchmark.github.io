@@ -1846,6 +1846,42 @@
     },
     {
       "info": {
+        "name": "NVLM-D 1.0 72B",
+        "size": "72B",
+        "date": "2024-09-17",
+        "type": "open_source",
+        "link": "https://nvlm-project.github.io/"
+      },
+      "validation": {
+        "overall": "59.7",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "NVLM-H 1.0 72B",
+        "size": "72B",
+        "date": "2024-09-17",
+        "type": "open_source",
+        "link": "https://nvlm-project.github.io/"
+      },
+      "validation": {
+        "overall": "60.2",
+        "source": "author"
+      },
+      "test": {
+        "overall": "53.0",
+        "artDesign": "64.8",
+        "business": "48.9",
+        "science": "46.4",
+        "healthMedicine": "58.7",
+        "humanSocialSci": "73.9",
+        "techEng": "45.2",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Frequent Choice",
         "size": "-",
         "date": "2023-11-27",
