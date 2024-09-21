@@ -1855,6 +1855,16 @@
       "validation": {
         "overall": "59.7",
         "source": "author"
+      },
+      "test": {
+        "overall": "54.6",
+        "artDesign": "66.0",
+        "business": "49.4",
+        "science": "47.3",
+        "healthMedicine": "60.5",
+        "humanSocialSci": "77.8",
+        "techEng": "47.0",
+        "source": "author"
       }
     },
     {
