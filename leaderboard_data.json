@@ -1905,7 +1905,8 @@
       "pro": {
         "overall": "28.4",
         "vision": "23.7",
-        "original": "33.0"
+        "original": "33.0",
+        "source": "author"
       }
     },
     {
@@ -1923,7 +1924,8 @@
       "pro": {
         "overall": "39.5",
         "vision": "33.8",
-        "original": "45.2"
+        "original": "45.2",
+        "source": "author"
       }
     },
     {
