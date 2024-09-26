@@ -1892,6 +1892,42 @@
     },
     {
       "info": {
+        "name": "Llama 3.2 11B",
+        "size": "11B",
+        "date": "2024-09-25",
+        "type": "open_source",
+        "link": "https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/"
+      },
+      "validation": {
+        "overall": "50.7",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "28.4",
+        "vision": "23.7",
+        "original": "33.0"
+      }
+    },
+    {
+      "info": {
+        "name": "Llama 3.2 90B",
+        "size": "90B",
+        "date": "2024-09-25",
+        "type": "open_source",
+        "link": "https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/"
+      },
+      "validation": {
+        "overall": "60.3",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "39.5",
+        "vision": "33.8",
+        "original": "45.2"
+      }
+    },
+    {
+      "info": {
         "name": "Frequent Choice",
         "size": "-",
         "date": "2023-11-27",
