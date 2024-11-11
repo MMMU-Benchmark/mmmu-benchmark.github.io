@@ -341,36 +341,36 @@
     },
     {
       "info": {
-        "name": "VILA 1.5",
-        "size": "40B",
-        "date": "2024-05-04",
+        "name": "NVILA",
+        "size": "14B",
+        "date": "2024-11-10",
         "type": "open_source",
         "link": "https://github.com/NVlabs/VILA"
       },
       "validation": {
-        "overall": "51.9",
-        "artDesign": "60.8",
-        "business": "43.3",
-        "science": "36.0",
-        "healthMedicine": "57.3",
-        "humanSocialSci": "73.3",
-        "techEng": "48.1",
+        "overall": "58.7",
+        "artDesign": "65.8",
+        "business": "62.7",
+        "science": "50.0",
+        "healthMedicine": "61.3",
+        "humanSocialSci": "74.2",
+        "techEng": "47.1",
         "source": "author"
       },
       "test": {
-        "overall": "46.9",
-        "artDesign": "62.2",
-        "business": "40.6",
-        "science": "37.7",
-        "healthMedicine": "51.7",
-        "humanSocialSci": "74.0",
-        "techEng": "39.5",
+        "overall": "51.8",
+        "artDesign": "63.2",
+        "business": "54.6",
+        "science": "42.9",
+        "healthMedicine": "57.0",
+        "humanSocialSci": "73.7",
+        "techEng": "42.7",
         "source": "author"
       },
       "pro": {
-        "overall": "25.0",
-        "vision": "14.1",
-        "original": "35.9"
+        "overall": "29.6",
+        "vision": "21.6",
+        "original": "37.6"
       }
     },
     {
