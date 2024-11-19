@@ -1931,6 +1931,25 @@
     },
     {
       "info": {
+        "name": "TeleMM",
+        "size": "-",
+        "date": "2024-11-18",
+        "type": "proprietary",
+        "link": "https://cloud.siliconflow.cn/playground/chat/17885302607 "
+      },
+      "validation": {
+        "overall": "61.4",
+        "artDesign": "68.3",
+        "business": "62.7",
+        "science": "52.0",
+        "healthMedicine": "65.3",
+        "humanSocialSci": "77.6",
+        "techEng": "51.4",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Frequent Choice",
         "size": "-",
         "date": "2023-11-27",
