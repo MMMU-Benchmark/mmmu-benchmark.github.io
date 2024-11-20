@@ -342,7 +342,7 @@
     {
       "info": {
         "name": "NVILA",
-        "size": "14B",
+        "size": "15B",
         "date": "2024-11-10",
         "type": "open_source",
         "link": "https://github.com/NVlabs/VILA"
@@ -1847,8 +1847,8 @@
     },
     {
       "info": {
-        "name": "NVLM-D 1.0 72B",
-        "size": "72B",
+        "name": "NVLM-D 1.0 78B",
+        "size": "78B",
         "date": "2024-09-17",
         "type": "open_source",
         "link": "https://nvlm-project.github.io/"
@@ -1870,8 +1870,8 @@
     },
     {
       "info": {
-        "name": "NVLM-H 1.0 72B",
-        "size": "72B",
+        "name": "NVLM-H 1.0 78B",
+        "size": "78B",
         "date": "2024-09-17",
         "type": "open_source",
         "link": "https://nvlm-project.github.io/"
