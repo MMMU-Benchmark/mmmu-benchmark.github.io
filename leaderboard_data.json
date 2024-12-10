@@ -1960,6 +1960,46 @@
     },
     {
       "info": {
+        "name": "MAmmoTH-VL-8B",
+        "size": "8B",
+        "date": "2024-12-08",
+        "type": "open_source",
+        "link": "https://mammoth-vl.github.io/"
+      },
+      "validation": {
+        "overall": "50.8",
+        "source": "author"
+      },
+      "pro": {
+        "vision": "25.3",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "InternVL2.5-78B",
+        "size": "78B",
+        "date": "2024-12-05",
+        "type": "open_source",
+        "link": "https://huggingface.co/OpenGVLab/InternVL2_5-78B"
+      },
+      "validation": {
+        "overall": "70.1",
+        "source": "author"
+      },
+      "test": {
+        "overall": "61.8",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "48.6",
+        "vision": "45.9",
+        "original": "51.4",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Frequent Choice",
         "size": "-",
         "date": "2023-11-27",
