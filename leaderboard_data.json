@@ -2000,6 +2000,121 @@
     },
     {
       "info": {
+        "name": "InternVL2.5-38B",
+        "size": "38B",
+        "date": "2024-12-05",
+        "type": "open_source",
+        "link": "https://huggingface.co/OpenGVLab/InternVL2_5-38B"
+      },
+      "validation": {
+        "overall": "63.9",
+        "source": "author"
+      },
+      "test": {
+        "overall": "57.6",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "46.0",
+        "vision": "44.0",
+        "original": "48.0",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "InternVL2.5-26B",
+        "size": "26B",
+        "date": "2024-12-05",
+        "type": "open_source",
+        "link": "https://huggingface.co/OpenGVLab/InternVL2_5-26B"
+      },
+      "validation": {
+        "overall": "60.0",
+        "source": "author"
+      },
+      "test": {
+        "overall": "51.8",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "37.1",
+        "vision": "32.6",
+        "original": "41.6",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "InternVL2.5-8B",
+        "size": "8B",
+        "date": "2024-12-05",
+        "type": "open_source",
+        "link": "https://huggingface.co/OpenGVLab/InternVL2_5-8B"
+      },
+      "validation": {
+        "overall": "56.0",
+        "source": "author"
+      },
+      "test": {
+        "overall": "48.9",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "34.3",
+        "vision": "30.4",
+        "original": "38.2",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "InternVL2.5-2B",
+        "size": "2B",
+        "date": "2024-12-05",
+        "type": "open_source",
+        "link": "https://huggingface.co/OpenGVLab/InternVL2_5-2B"
+      },
+      "validation": {
+        "overall": "43.6",
+        "source": "author"
+      },
+      "test": {
+        "overall": "38.2",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "23.7",
+        "vision": "20.1",
+        "original": "27.3",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "InternVL2.5-1B",
+        "size": "1B",
+        "date": "2024-12-05",
+        "type": "open_source",
+        "link": "https://huggingface.co/OpenGVLab/InternVL2_5-1B"
+      },
+      "validation": {
+        "overall": "40.9",
+        "source": "author"
+      },
+      "test": {
+        "overall": "35.8",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "19.4",
+        "vision": "15.5",
+        "original": "23.3",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Frequent Choice",
         "size": "-",
         "date": "2023-11-27",
