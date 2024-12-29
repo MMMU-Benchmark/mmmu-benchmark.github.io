@@ -2167,6 +2167,19 @@
     },
     {
       "info": {
+        "name": "MetaMorph",
+        "size": "-",
+        "date": "2024-12-19",
+        "type": "proprietary",
+        "link": "https://tsb0601.github.io/metamorph/"
+      },
+      "validation": {
+        "overall": "41.8",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Frequent Choice",
         "size": "-",
         "date": "2023-11-27",
