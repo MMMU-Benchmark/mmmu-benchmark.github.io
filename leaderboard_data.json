@@ -60,7 +60,7 @@
         "link": "https://openai.com/index/introducing-openai-o1-preview/"
       },
       "validation": {
-        "overall": "78.1",
+        "overall": "78.2",
         "source": "author"
       }
     },
@@ -2322,6 +2322,19 @@
       },
       "validation": {
         "overall": "40.7",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Aria",
+        "size": "3.9B",
+        "date": "2024-10-10",
+        "type": "open_source",
+        "link": "https://rhymes.ai/blog-details/aria-first-open-multimodal-native-moe-model"
+      },
+      "validation": {
+        "overall": "54.9",
         "source": "author"
       }
     },
