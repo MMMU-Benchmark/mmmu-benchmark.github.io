@@ -2128,6 +2128,32 @@
     },
     {
       "info": {
+        "name": "HoVLE",
+        "size": "2.6B",
+        "date": "2024-12-18",
+        "type": "open_source",
+        "link": "https://huggingface.co/OpenGVLab/HoVLE"
+      },
+      "validation": {
+        "overall": "33.7",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "HoVLE (HD)",
+        "size": "2.6B",
+        "date": "2024-12-18",
+        "type": "open_source",
+        "link": "https://huggingface.co/OpenGVLab/HoVLE-HD"
+      },
+      "validation": {
+        "overall": "33.2",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Frequent Choice",
         "size": "-",
         "date": "2023-11-27",
