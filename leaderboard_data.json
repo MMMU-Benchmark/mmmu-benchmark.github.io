@@ -2154,6 +2154,19 @@
     },
     {
       "info": {
+        "name": "LLaVA-UHD v2",
+        "size": "-",
+        "date": "2024-12-21",
+        "type": "open_source",
+        "link": "https://arxiv.org/pdf/2412.13871"
+      },
+      "validation": {
+        "overall": "38.2",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Frequent Choice",
         "size": "-",
         "date": "2023-11-27",
