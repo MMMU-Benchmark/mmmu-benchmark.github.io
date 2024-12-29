@@ -2115,6 +2115,19 @@
     },
     {
       "info": {
+        "name": "QVQ-72B-Preview",
+        "size": "72B",
+        "date": "2024-12-25",
+        "type": "open_source",
+        "link": "https://qwenlm.github.io/blog/qvq-72b-preview/"
+      },
+      "validation": {
+        "overall": "70.3",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Frequent Choice",
         "size": "-",
         "date": "2023-11-27",
