@@ -2180,6 +2180,153 @@
     },
     {
       "info": {
+        "name": "ILLUME",
+        "size": "-",
+        "date": "2024-12-09",
+        "type": "proprietary",
+        "link": "https://arxiv.org/pdf/2412.06673"
+      },
+      "validation": {
+        "overall": "38.2",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Emu3",
+        "size": "8B",
+        "date": "2024-09-27",
+        "type": "open_source",
+        "link": "https://emu.baai.ac.cn/about"
+      },
+      "validation": {
+        "overall": "31.6",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "POINTS1.5",
+        "size": "7B",
+        "date": "2024-12-11",
+        "type": "open_source",
+        "link": "https://github.com/WePOINTS/WePOINTS?tab=readme-ov-file"
+      },
+      "validation": {
+        "overall": "53.8",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "HyViLM",
+        "size": "8B",
+        "date": "2024-12-11",
+        "type": "proprietary",
+        "link": "https://arxiv.org/abs/2412.08378"
+      },
+      "validation": {
+        "overall": "41.8",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Olympus",
+        "size": "2.7B",
+        "date": "2024-12-12",
+        "type": "open_source",
+        "link": "https://yuanze-lin.me/Olympus_page/"
+      },
+      "validation": {
+        "overall": "32.8",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "SynerGen-VL",
+        "size": "2.4B",
+        "date": "2024-12-12",
+        "type": "proprietary",
+        "link": "https://arxiv.org/abs/2412.09604"
+      },
+      "validation": {
+        "overall": "34.2",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Show-o",
+        "size": "1.3B",
+        "date": "2024-08-22",
+        "type": "open_source",
+        "link": "https://showlab.github.io/Show-o/"
+      },
+      "validation": {
+        "overall": "27.4",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "EVLM-KTO",
+        "size": "7B",
+        "date": "2024-12-13",
+        "type": "proprietary",
+        "link": "https://arxiv.org/abs/2412.10566"
+      },
+      "validation": {
+        "overall": "53.0",
+        "source": "author"
+      },
+      "pro": {
+        "vision": "43.8",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "DeepSeek-VL2",
+        "size": "4.5B",
+        "date": "2024-12-13",
+        "type": "open_source",
+        "link": "https://github.com/deepseek-ai/DeepSeek-VL2"
+      },
+      "validation": {
+        "overall": "51.1",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "DeepSeek-VL2-Small",
+        "size": "2.8B",
+        "date": "2024-12-13",
+        "type": "open_source",
+        "link": "https://github.com/deepseek-ai/DeepSeek-VL2"
+      },
+      "validation": {
+        "overall": "48.0",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "DeepSeek-VL2-Tiny",
+        "size": "1.0B",
+        "date": "2024-12-13",
+        "type": "open_source",
+        "link": "https://github.com/deepseek-ai/DeepSeek-VL2"
+      },
+      "validation": {
+        "overall": "40.7",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Frequent Choice",
         "size": "-",
         "date": "2023-11-27",
