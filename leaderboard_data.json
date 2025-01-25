@@ -2340,6 +2340,35 @@
     },
     {
       "info": {
+        "name": "Spark4.0-Turbo",
+        "size": "-",
+        "date": "2025-01-22",
+        "type": "proprietary",
+        "link": "https://xinghuo.xfyun.cn/spark"
+      },
+      "validation": {
+        "overall": "70.4",
+        "artDesign": "71.7",
+        "business": "76.0",
+        "science": "62.7",
+        "healthMedicine": "78.0",
+        "humanSocialSci": "85.0",
+        "techEng": "57.6",
+        "source": "author"
+      },
+      "test": {
+        "overall": "60.3",
+        "artDesign": "67.4",
+        "business": "66.8",
+        "science": "53.0",
+        "healthMedicine": "68.4",
+        "humanSocialSci": "80.3",
+        "techEng": "48.6",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Frequent Choice",
         "size": "-",
         "date": "2023-11-27",
