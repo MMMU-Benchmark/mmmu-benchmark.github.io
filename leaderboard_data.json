@@ -101,6 +101,45 @@
     },
     {
       "info": {
+        "name": "Gemini 2.0 Flash-Lite",
+        "size": "-",
+        "date": "2025-02-05",
+        "type": "proprietary",
+        "link": "https://deepmind.google/technologies/gemini/"
+      },
+      "validation": {
+        "overall": "68.0",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Gemini 2.0 Flash",
+        "size": "-",
+        "date": "2025-02-05",
+        "type": "proprietary",
+        "link": "https://deepmind.google/technologies/gemini/"
+      },
+      "validation": {
+        "overall": "71.7",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Gemini 2.0 Pro",
+        "size": "-",
+        "date": "2025-02-05",
+        "type": "proprietary",
+        "link": "https://deepmind.google/technologies/gemini/"
+      },
+      "validation": {
+        "overall": "72.7",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Gemini 1.5 Pro (0801)",
         "size": "-",
         "date": "2024-08-01",
