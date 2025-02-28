@@ -66,6 +66,19 @@
     },
     {
       "info": {
+        "name": "GPT‑4.5",
+        "size": "-",
+        "date": "2025-02-28",
+        "type": "proprietary",
+        "link": "GPT‑4.5"
+      },
+      "validation": {
+        "overall": "74.4",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "GPT-4o (0513)",
         "size": "-",
         "date": "2024-05-13",
