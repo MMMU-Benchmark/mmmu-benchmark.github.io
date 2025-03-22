@@ -2180,6 +2180,57 @@
     },
     {
       "info": {
+        "name": "Qwen2.5-VL 3B",
+        "size": "3B",
+        "date": "2025-02-19",
+        "type": "open_source",
+        "link": "https://arxiv.org/pdf/2502.13923"
+      },
+      "validation": {
+        "overall": "53.1",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "31.6",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Qwen2.5-VL 7B",
+        "size": "7B",
+        "date": "2025-02-19",
+        "type": "open_source",
+        "link": "https://arxiv.org/pdf/2502.13923"
+      },
+      "validation": {
+        "overall": "58.6",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "38.3",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Qwen2.5-VL 72B",
+        "size": "72B",
+        "date": "2025-02-19",
+        "type": "open_source",
+        "link": "https://arxiv.org/pdf/2502.13923"
+      },
+      "validation": {
+        "overall": "64.5",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "46.2",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "HoVLE",
         "size": "2.6B",
         "date": "2024-12-18",
