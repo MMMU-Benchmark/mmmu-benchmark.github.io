@@ -1983,6 +1983,45 @@
     },
     {
       "info": {
+        "name": "Llama 4 Behemoth",
+        "size": "288B",
+        "date": "2025-04-05",
+        "type": "proprietary",
+        "link": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"
+      },
+      "validation": {
+        "overall": "76.1",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Llama 4 Maverick",
+        "size": "17B",
+        "date": "2025-04-05",
+        "type": "open_source",
+        "link": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"
+      },
+      "validation": {
+        "overall": "73.4",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Llama 4 Scout",
+        "size": "17B",
+        "date": "2025-04-05",
+        "type": "open_source",
+        "link": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"
+      },
+      "validation": {
+        "overall": "69.4",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "TeleMM",
         "size": "-",
         "date": "2024-11-18",
