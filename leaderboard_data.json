@@ -1899,6 +1899,58 @@
     },
     {
       "info": {
+        "name": "Gemma3-4B",
+        "size": "4B",
+        "date": "2025-03-12",
+        "type": "open_source",
+        "link": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf"
+      },
+      "validation": {
+        "overall": "48.8",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Gemma3-12B",
+        "size": "12B",
+        "date": "2025-03-12",
+        "type": "open_source",
+        "link": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf"
+      },
+      "validation": {
+        "overall": "59.6",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Gemma3-27B",
+        "size": "27B",
+        "date": "2025-03-12",
+        "type": "open_source",
+        "link": "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf"
+      },
+      "validation": {
+        "overall": "64.9",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Kimi-VL-A3B",
+        "size": "16B",
+        "date": "2025-04-10",
+        "type": "open_source",
+        "link": "https://github.com/MoonshotAI/Kimi-VL"
+      },
+      "validation": {
+        "overall": "57.0",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "NVLM-D 1.0 78B",
         "size": "78B",
         "date": "2024-09-17",
