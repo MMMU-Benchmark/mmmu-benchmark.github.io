@@ -53,6 +53,32 @@
     },
     {
       "info": {
+        "name": "o3",
+        "size": "-",
+        "date": "2025-04-16",
+        "type": "proprietary",
+        "link": "https://openai.com/index/introducing-o3-and-o4-mini/"
+      },
+      "validation": {
+        "overall": "82.9",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "o4-mini",
+        "size": "-",
+        "date": "2025-04-16",
+        "type": "proprietary",
+        "link": "https://openai.com/index/introducing-o3-and-o4-mini/"
+      },
+      "validation": {
+        "overall": "81.6",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "o1",
         "size": "-",
         "date": "2024-09-12",
