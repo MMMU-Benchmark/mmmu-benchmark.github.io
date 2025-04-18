@@ -140,6 +140,30 @@
     },
     {
       "info": {
+        "name": "Claude 3.7 Sonnet",
+        "size": "-",
+        "date": "2024-02-24",
+        "type": "proprietary",
+        "link": "https://www.anthropic.com/claude/sonnet"
+      },
+      "validation": {
+        "overall": "75.0"
+      }
+    },
+    {
+      "info": {
+        "name": "Grok 3 Beta",
+        "size": "-",
+        "date": "2024-02-19",
+        "type": "proprietary",
+        "link": "https://x.ai/news/grok-3"
+      },
+      "validation": {
+        "overall": "78.0"
+      }
+    },
+    {
+      "info": {
         "name": "Gemini 2.0 Flash-Lite",
         "size": "-",
         "date": "2025-02-05",
@@ -174,6 +198,19 @@
       },
       "validation": {
         "overall": "72.7",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Gemini 2.5 Pro",
+        "size": "-",
+        "date": "2025-03-26",
+        "type": "proprietary",
+        "link": "https://deepmind.google/technologies/gemini/pro/"
+      },
+      "validation": {
+        "overall": "81.7",
         "source": "author"
       }
     },
