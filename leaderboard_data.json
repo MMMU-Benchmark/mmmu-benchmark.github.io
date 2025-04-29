@@ -123,6 +123,19 @@
     },
     {
       "info": {
+        "name": "GPT-4o (1120)",
+        "size": "-",
+        "date": "2024-11-20",
+        "type": "proprietary",
+        "link": "https://openai.com/index/hello-gpt-4o/"
+      },
+      "validation": {
+        "overall": "70.7",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Claude 3.5 Sonnet",
         "size": "-",
         "date": "2024-06-20",
@@ -2712,6 +2725,84 @@
       },
       "validation": {
         "overall": "72.2",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Ovis2-1B",
+        "size": "1B",
+        "date": "2025-03-25",
+        "type": "open_source",
+        "link": "https://github.com/AIDC-AI/Ovis"
+      },
+      "validation": {
+        "overall": "36.0",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Ovis2-2B",
+        "size": "2B",
+        "date": "2025-03-25",
+        "type": "open_source",
+        "link": "https://github.com/AIDC-AI/Ovis"
+      },
+      "validation": {
+        "overall": "45.3",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Ovis2-4B",
+        "size": "4B",
+        "date": "2025-03-25",
+        "type": "open_source",
+        "link": "https://github.com/AIDC-AI/Ovis"
+      },
+      "validation": {
+        "overall": "48.0",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Ovis2-8B",
+        "size": "8B",
+        "date": "2025-03-25",
+        "type": "open_source",
+        "link": "https://github.com/AIDC-AI/Ovis"
+      },
+      "validation": {
+        "overall": "59.0",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Ovis2-16B",
+        "size": "16B",
+        "date": "2025-03-25",
+        "type": "open_source",
+        "link": "https://github.com/AIDC-AI/Ovis"
+      },
+      "validation": {
+        "overall": "59.6",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Ovis2-34B",
+        "size": "34B",
+        "date": "2025-03-25",
+        "type": "open_source",
+        "link": "https://github.com/AIDC-AI/Ovis"
+      },
+      "validation": {
+        "overall": "65.6",
         "source": "author"
       }
     },
