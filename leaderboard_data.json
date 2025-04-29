@@ -2808,6 +2808,58 @@
     },
     {
       "info": {
+        "name": "Cambrian-1-8B",
+        "size": "8B",
+        "date": "2024-06-27",
+        "type": "open_source",
+        "link": "https://cambrian-mllm.github.io/"
+      },
+      "validation": {
+        "overall": "42.7",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Cambrian-1-13B",
+        "size": "13B",
+        "date": "2024-06-27",
+        "type": "open_source",
+        "link": "https://cambrian-mllm.github.io/"
+      },
+      "validation": {
+        "overall": "40.0",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Cambrian-1-34B",
+        "size": "34B",
+        "date": "2024-06-27",
+        "type": "open_source",
+        "link": "https://cambrian-mllm.github.io/"
+      },
+      "validation": {
+        "overall": "49.7",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Aquila-VL-2B",
+        "size": "2B",
+        "date": "2024-10-25",
+        "type": "open_source",
+        "link": "https://huggingface.co/BAAI/Aquila-VL-2B-llava-qwen"
+      },
+      "validation": {
+        "overall": "47.4",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Frequent Choice",
         "size": "-",
         "date": "2023-11-27",
