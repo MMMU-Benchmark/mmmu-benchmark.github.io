@@ -2899,6 +2899,19 @@
     },
     {
       "info": {
+        "name": "Eagle2.5-8B",
+        "size": "8B",
+        "date": "2025-04-21",
+        "type": "open_source",
+        "link": "https://nvlabs.github.io/EAGLE/"
+      },
+      "validation": {
+        "overall": "55.8",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Frequent Choice",
         "size": "-",
         "date": "2023-11-27",
