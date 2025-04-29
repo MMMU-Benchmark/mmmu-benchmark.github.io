@@ -2626,6 +2626,97 @@
     },
     {
       "info": {
+        "name": "InternVL3-1B",
+        "size": "1B",
+        "date": "2025-04-11",
+        "type": "open_source",
+        "link": "https://internvl.github.io/blog/2025-04-11-InternVL-3.0/"
+      },
+      "validation": {
+        "overall": "43.4",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "InternVL3-2B",
+        "size": "2B",
+        "date": "2025-04-11",
+        "type": "open_source",
+        "link": "https://internvl.github.io/blog/2025-04-11-InternVL-3.0/"
+      },
+      "validation": {
+        "overall": "48.6",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "InternVL3-8B",
+        "size": "8B",
+        "date": "2025-04-11",
+        "type": "open_source",
+        "link": "https://internvl.github.io/blog/2025-04-11-InternVL-3.0/"
+      },
+      "validation": {
+        "overall": "62.7",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "InternVL3-9B",
+        "size": "9B",
+        "date": "2025-04-11",
+        "type": "open_source",
+        "link": "https://internvl.github.io/blog/2025-04-11-InternVL-3.0/"
+      },
+      "validation": {
+        "overall": "57.7",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "InternVL3-14B",
+        "size": "14B",
+        "date": "2025-04-11",
+        "type": "open_source",
+        "link": "https://internvl.github.io/blog/2025-04-11-InternVL-3.0/"
+      },
+      "validation": {
+        "overall": "67.1",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "InternVL3-38B",
+        "size": "38B",
+        "date": "2025-04-11",
+        "type": "open_source",
+        "link": "https://internvl.github.io/blog/2025-04-11-InternVL-3.0/"
+      },
+      "validation": {
+        "overall": "70.1",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "InternVL3-78B",
+        "size": "78B",
+        "date": "2025-04-11",
+        "type": "open_source",
+        "link": "https://internvl.github.io/blog/2025-04-11-InternVL-3.0/"
+      },
+      "validation": {
+        "overall": "72.2",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Frequent Choice",
         "size": "-",
         "date": "2023-11-27",
