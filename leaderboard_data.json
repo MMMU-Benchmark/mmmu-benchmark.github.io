@@ -2860,6 +2860,45 @@
     },
     {
       "info": {
+        "name": "Skywork-R1V2-38B",
+        "size": "38B",
+        "date": "2025-04-28",
+        "type": "open_source",
+        "link": "https://github.com/SkyworkAI/Skywork-R1V"
+      },
+      "validation": {
+        "overall": "73.6",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Skywork-R1V2-38B",
+        "size": "38B",
+        "date": "2025-04-28",
+        "type": "open_source",
+        "link": "https://huggingface.co/Skywork/Skywork-R1V2-38B-AWQ"
+      },
+      "validation": {
+        "overall": "73.6",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Skywork-R1V-38B",
+        "size": "38B",
+        "date": "2025-04-28",
+        "type": "open_source",
+        "link": "https://huggingface.co/Skywork/Skywork-R1V-38B-AWQ"
+      },
+      "validation": {
+        "overall": "69.0",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Frequent Choice",
         "size": "-",
         "date": "2023-11-27",
