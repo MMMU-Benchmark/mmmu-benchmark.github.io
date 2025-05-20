@@ -216,14 +216,27 @@
     },
     {
       "info": {
-        "name": "Gemini 2.5 Pro",
+        "name": "Gemini 2.5 Pro Deep-Think",
+        "size": "-",
+        "date": "2025-05-20",
+        "type": "proprietary",
+        "link": "https://deepmind.google/technologies/gemini/pro/"
+      },
+      "validation": {
+        "overall": "84.0",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Gemini 2.5 Pro 05-06",
         "size": "-",
         "date": "2025-03-26",
         "type": "proprietary",
         "link": "https://deepmind.google/technologies/gemini/pro/"
       },
       "validation": {
-        "overall": "81.7",
+        "overall": "79.6",
         "source": "author"
       }
     },
