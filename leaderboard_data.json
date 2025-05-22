@@ -2972,6 +2972,136 @@
     },
     {
       "info": {
+        "name": "BLIP3-o4B",
+        "size": "4B",
+        "date": "2025-05-16",
+        "type": "open_source",
+        "link": "https://github.com/JiuhaiChen/BLIP3o"
+      },
+      "validation": {
+        "overall": "46.6",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "BLIP3-o8B",
+        "size": "8B",
+        "date": "2025-05-16",
+        "type": "open_source",
+        "link": "https://github.com/JiuhaiChen/BLIP3o"
+      },
+      "validation": {
+        "overall": "50.6",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Flash-VL-2B-Dynamic",
+        "size": "2B",
+        "date": "2025-05-16",
+        "type": "open_source",
+        "link": "https://huggingface.co/FlashVL/FlashVL-2B-Dynamic"
+      },
+      "validation": {
+        "overall": "42.9",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Aya-Vision-8B",
+        "size": "8B",
+        "date": "2025-05-13",
+        "type": "open_source",
+        "link": "https://huggingface.co/CohereLabs/aya-vision-8b"
+      },
+      "validation": {
+        "overall": "39.9",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Aya-Vision-32B",
+        "size": "32B",
+        "date": "2025-05-13",
+        "type": "open_source",
+        "link": "https://huggingface.co/CohereLabs/aya-vision-32b"
+      },
+      "validation": {
+        "overall": "45.11",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Mogao-7B",
+        "size": "8B",
+        "date": "2025-05-08",
+        "type": "open_source",
+        "link": "https://arxiv.org/abs/2505.05472"
+      },
+      "validation": {
+        "overall": "44.2",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Nova Premier",
+        "size": "-",
+        "date": "2025-4-30",
+        "type": "proprietary",
+        "link": "https://www.amazon.science/publications/amazon-nova-premier-technical-report-and-model-card"
+      },
+      "validation": {
+        "overall": "68.0",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Nova Pro",
+        "size": "-",
+        "date": "2025-4-30",
+        "type": "proprietary",
+        "link": "https://www.amazon.science/publications/amazon-nova-premier-technical-report-and-model-card"
+      },
+      "validation": {
+        "overall": "62.0",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "SpaRE-2B",
+        "size": "2B",
+        "date": "2025-04-29",
+        "type": "open_source",
+        "link": "https://arxiv.org/abs/2504.20648"
+      },
+      "validation": {
+        "overall": "40.0",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "SpaRE-7B",
+        "size": "7B",
+        "date": "2025-04-29",
+        "type": "open_source",
+        "link": "https://arxiv.org/abs/2504.20648"
+      },
+      "validation": {
+        "overall": "51.0",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Frequent Choice",
         "size": "-",
         "date": "2023-11-27",
