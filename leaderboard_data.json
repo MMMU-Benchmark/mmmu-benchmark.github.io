@@ -231,12 +231,25 @@
       "info": {
         "name": "Gemini 2.5 Pro 05-06",
         "size": "-",
-        "date": "2025-03-26",
+        "date": "2025-05-06",
         "type": "proprietary",
         "link": "https://deepmind.google/technologies/gemini/pro/"
       },
       "validation": {
         "overall": "79.6",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Gemini 2.5 Flash 05-20",
+        "size": "-",
+        "date": "2025-05-20",
+        "type": "proprietary",
+        "link": "https://deepmind.google/models/gemini/flash/"
+      },
+      "validation": {
+        "overall": "79.7",
         "source": "author"
       }
     },
