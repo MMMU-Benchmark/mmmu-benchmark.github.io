@@ -2623,6 +2623,40 @@
     },
     {
       "info": {
+        "name": "Seed 1.5-VL",
+        "size": "20B",
+        "date": "2025-05-13",
+        "type": "open_source",
+        "link": "https://seed.bytedance.com/zh/tech/seed1_5_vl"
+      },
+      "validation": {
+        "overall": "73.6",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "59.9",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Seed 1.5-VL Thinking",
+        "size": "20B",
+        "date": "2025-05-13",
+        "type": "open_source",
+        "link": "https://seed.bytedance.com/zh/tech/seed1_5_vl"
+      },
+      "validation": {
+        "overall": "77.9",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "67.6",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Aria",
         "size": "3.9B",
         "date": "2024-10-10",
