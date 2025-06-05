@@ -15,6 +15,11 @@
         "healthMedicine": "87.3",
         "humanSocialSci": "89.2",
         "techEng": "86.2"
+      },
+      "pro": {
+        "overall": "85.4",
+        "vision": "85.4",
+        "original": "85.4"
       }
     },
     {
@@ -32,6 +37,11 @@
         "healthMedicine": "78.8",
         "humanSocialSci": "85.0",
         "techEng": "79.1"
+      },
+      "pro": {
+        "overall": "80.8",
+        "vision": "80.8",
+        "original": "80.8"
       }
     },
     {
@@ -49,6 +59,11 @@
         "healthMedicine": "73.3",
         "humanSocialSci": "74.2",
         "techEng": "74.3"
+      },
+      "pro": {
+        "overall": "73.0",
+        "vision": "73.0",
+        "original": "73.0"
       }
     },
     {
