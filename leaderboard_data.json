@@ -2584,6 +2584,44 @@
     },
     {
       "info": {
+        "name": "MiMo-VL 7B-SFT",
+        "size": "7B",
+        "date": "2025-06-04",
+        "type": "open_source",
+        "link": "https://github.com/XiaomiMiMo/MiMo-VL"
+      },
+      "validation": {
+        "overall": "64.6",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "42.3",
+        "vision": "39.4",
+        "original": "45.2",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "MiMo-VL 7B-RL",
+        "size": "7B",
+        "date": "2025-06-04",
+        "type": "open_source",
+        "link": "https://github.com/XiaomiMiMo/MiMo-VL"
+      },
+      "validation": {
+        "overall": "66.7",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "43.3",
+        "vision": "40.3",
+        "original": "46.2",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "DeepSeek-VL2",
         "size": "4.5B",
         "date": "2024-12-13",
@@ -2592,6 +2630,8 @@
       },
       "validation": {
         "overall": "51.1",
+        "vision": "42.0",
+        "standard": "60.2",
         "source": "author"
       }
     },
