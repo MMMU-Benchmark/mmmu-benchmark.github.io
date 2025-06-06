@@ -151,6 +151,32 @@
     },
     {
       "info": {
+        "name": "Claude Opus 4",
+        "size": "-",
+        "date": "2025-05-23",
+        "type": "proprietary",
+        "link": "https://www.anthropic.com/news/claude-4"
+      },
+      "validation": {
+        "overall": "74.4",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Claude Sonnet 4",
+        "size": "-",
+        "date": "2025-05-23",
+        "type": "proprietary",
+        "link": "https://www.anthropic.com/news/claude-4"
+      },
+      "validation": {
+        "overall": "76.5",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Claude 3.5 Sonnet",
         "size": "-",
         "date": "2024-06-20",
@@ -175,7 +201,8 @@
         "link": "https://www.anthropic.com/claude/sonnet"
       },
       "validation": {
-        "overall": "75.0"
+        "overall": "75.0",
+        "source": "author"
       }
     },
     {
@@ -187,7 +214,8 @@
         "link": "https://x.ai/news/grok-3"
       },
       "validation": {
-        "overall": "78.0"
+        "overall": "78.0",
+        "source": "author"
       }
     },
     {
@@ -2681,7 +2709,7 @@
         "name": "Seed 1.5-VL",
         "size": "20B",
         "date": "2025-05-13",
-        "type": "open_source",
+        "type": "proprietary",
         "link": "https://seed.bytedance.com/zh/tech/seed1_5_vl"
       },
       "validation": {
@@ -2698,7 +2726,7 @@
         "name": "Seed 1.5-VL Thinking",
         "size": "20B",
         "date": "2025-05-13",
-        "type": "open_source",
+        "type": "proprietary",
         "link": "https://seed.bytedance.com/zh/tech/seed1_5_vl"
       },
       "validation": {
