@@ -2706,11 +2706,28 @@
     },
     {
       "info": {
+        "name": "Seed 1.6-Thinking",
+        "size": "20B",
+        "date": "2025-06-25",
+        "type": "proprietary",
+        "link": "https://seed.bytedance.com/en/seed1_6"
+      },
+      "validation": {
+        "overall": "74.8",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "66.4",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Seed 1.5-VL",
         "size": "20B",
         "date": "2025-05-13",
         "type": "proprietary",
-        "link": "https://seed.bytedance.com/zh/tech/seed1_5_vl"
+        "link": "https://seed.bytedance.com/en/tech/seed1_5_vl"
       },
       "validation": {
         "overall": "73.6",
@@ -2727,7 +2744,7 @@
         "size": "20B",
         "date": "2025-05-13",
         "type": "proprietary",
-        "link": "https://seed.bytedance.com/zh/tech/seed1_5_vl"
+        "link": "https://seed.bytedance.com/en/tech/seed1_5_vl"
       },
       "validation": {
         "overall": "77.9",
