@@ -3020,14 +3020,18 @@
     },
     {
       "info": {
-        "name": "Skywork-R1V2-38B",
+        "name": "Skywork-R1V3-38B",
         "size": "38B",
-        "date": "2025-04-28",
+        "date": "2025-07-05",
         "type": "open_source",
-        "link": "https://github.com/SkyworkAI/Skywork-R1V"
+        "link": "https://huggingface.co/Skywork/Skywork-R1V3-38B"
       },
       "validation": {
-        "overall": "73.6",
+        "overall": "76.0",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "55.4",
         "source": "author"
       }
     },
