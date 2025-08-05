@@ -151,6 +151,19 @@
     },
     {
       "info": {
+        "name": "Claude Opus 4.1",
+        "size": "-",
+        "date": "2025-08-05",
+        "type": "proprietary",
+        "link": "https://www.anthropic.com/news/claude-opus-4-1"
+      },
+      "validation": {
+        "overall": "77.1",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Claude Opus 4",
         "size": "-",
         "date": "2025-05-23",
