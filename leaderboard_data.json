@@ -68,6 +68,32 @@
     },
     {
       "info": {
+        "name": "GPT-5 w/ thinking",
+        "size": "-",
+        "date": "2025-08-07",
+        "type": "proprietary",
+        "link": "https://openai.com/gpt-5/"
+      },
+      "validation": {
+        "overall": "84.2",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "GPT-5 w/o thinking",
+        "size": "-",
+        "date": "2025-08-07",
+        "type": "proprietary",
+        "link": "https://openai.com/gpt-5/"
+      },
+      "validation": {
+        "overall": "74.4",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "o3",
         "size": "-",
         "date": "2025-04-16",
