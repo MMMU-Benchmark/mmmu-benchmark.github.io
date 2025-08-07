@@ -77,6 +77,10 @@
       "validation": {
         "overall": "84.2",
         "source": "author"
+      },
+      "pro": {
+        "overall": "78.4",
+        "source": "author"
       }
     },
     {
@@ -89,6 +93,10 @@
       },
       "validation": {
         "overall": "74.4",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "62.7",
         "source": "author"
       }
     },
