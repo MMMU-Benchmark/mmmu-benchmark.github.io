@@ -111,6 +111,10 @@
       "validation": {
         "overall": "82.9",
         "source": "author"
+      },
+      "pro": {
+        "overall": "76.4",
+        "source": "author"
       }
     },
     {
