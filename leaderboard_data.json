@@ -346,6 +346,23 @@
     },
     {
       "info": {
+        "name": "dots.vlm1",
+        "size": "37B",
+        "date": "2025-08-05",
+        "type": "open_source",
+        "link": "https://github.com/rednote-hilab/dots.vlm1"
+      },
+      "validation": {
+        "overall": "80.1",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "70.1",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "InternVL2-Pro",
         "size": "-",
         "date": "2024-07-04",
