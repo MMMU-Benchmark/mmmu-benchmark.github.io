@@ -2746,6 +2746,32 @@
     },
     {
       "info": {
+        "name": "MiMo-VL 7B-RL-2508 w/ Thinking",
+        "size": "7B",
+        "date": "2025-08-08",
+        "type": "open_source",
+        "link": "https://github.com/XiaomiMiMo/MiMo-VL"
+      },
+      "validation": {
+        "overall": "70.6",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "MiMo-VL 7B-RL-2508 w/o Thinking",
+        "size": "7B",
+        "date": "2025-08-08",
+        "type": "open_source",
+        "link": "https://github.com/XiaomiMiMo/MiMo-VL"
+      },
+      "validation": {
+        "overall": "63.1",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "DeepSeek-VL2",
         "size": "4.5B",
         "date": "2024-12-13",
