@@ -401,6 +401,19 @@
     },
     {
       "info": {
+        "name": "Intern-S1",
+        "size": "22B",
+        "date": "2025-08-04",
+        "type": "open_source",
+        "link": "https://github.com/InternLM/Intern-S1/"
+      },
+      "validation": {
+        "overall": "77.7",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "InternVL2-Pro",
         "size": "-",
         "date": "2024-07-04",
