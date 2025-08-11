@@ -2772,6 +2772,40 @@
     },
     {
       "info": {
+        "name": "GLM-4.5V w/ Thinking",
+        "size": "12B",
+        "date": "2025-08-11",
+        "type": "open_source",
+        "link": "https://docs.z.ai/guides/vlm/glm-4.5v"
+      },
+      "validation": {
+        "overall": "75.4",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "65.2",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "GLM-4.1V w/ Thinking",
+        "size": "9B",
+        "date": "2025-07-01",
+        "type": "open_source",
+        "link": "https://arxiv.org/abs/2507.01006"
+      },
+      "validation": {
+        "overall": "68.0",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "57.1",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "DeepSeek-VL2",
         "size": "4.5B",
         "date": "2024-12-13",
