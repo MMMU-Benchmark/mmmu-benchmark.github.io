@@ -501,6 +501,33 @@
     },
     {
       "info": {
+        "name": "KiQ-v0",
+        "size": "-",
+        "date": "2025-08-31",
+        "type": "proprietary",
+        "link": "https://uark-cviu.github.io/projects/papers/BiMax.pdf"
+      },
+      "validation": {
+        "overall": "72.6",
+        "artDesign": "75.8",
+        "business": "81.3",
+        "science": "64.0",
+        "healthMedicine": "74.0",
+        "humanSocialSci": "80.8",
+        "techEng": "64.8"
+      },
+      "test": {
+        "overall": "65.9",
+        "artDesign": "64.6",
+        "business": "78.3",
+        "science": "62.7",
+        "healthMedicine": "68.3",
+        "humanSocialSci": "72.1",
+        "techEng": "59.3"
+      }
+    },
+    {
+      "info": {
         "name": "Reka Core",
         "size": "-",
         "date": "2024-04-23",
