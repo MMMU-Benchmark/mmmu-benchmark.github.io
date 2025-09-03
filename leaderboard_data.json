@@ -547,6 +547,32 @@
     },
     {
       "info": {
+        "name": "LLaVA-Critic-R1",
+        "size": "7B",
+        "date": "2025-08-30",
+        "type": "open_source",
+        "link": "https://arxiv.org/pdf/2509.00676"
+      },
+      "validation": {
+        "overall": "69.7",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "LLaVA-Critic-R1+",
+        "size": "7B",
+        "date": "2025-08-30",
+        "type": "open_source",
+        "link": "https://arxiv.org/pdf/2509.00676"
+      },
+      "validation": {
+        "overall": "71.9",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Gemini 1.5 Flash",
         "size": "-",
         "date": "2024-05-23",
