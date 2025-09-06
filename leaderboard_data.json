@@ -202,7 +202,7 @@
     },
     {
       "info": {
-        "name": "Claude Opus 4",
+        "name": "Claude Sonnet 4",
         "size": "-",
         "date": "2025-05-23",
         "type": "proprietary",
@@ -215,7 +215,7 @@
     },
     {
       "info": {
-        "name": "Claude Sonnet 4",
+        "name": "Claude Opus 4",
         "size": "-",
         "date": "2025-05-23",
         "type": "proprietary",
