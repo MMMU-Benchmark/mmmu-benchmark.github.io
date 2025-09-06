@@ -2761,6 +2761,19 @@
     },
     {
       "info": {
+        "name": "DreamPRM1.5",
+        "size": "-",
+        "date": "2025-09-05",
+        "type": "proprietary",
+        "link": "https://github.com/coder-qicao/DreamPRM-1.5"
+      },
+      "validation": {
+        "overall": "84.6",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "MiMo-VL 7B-SFT",
         "size": "7B",
         "date": "2025-06-04",
