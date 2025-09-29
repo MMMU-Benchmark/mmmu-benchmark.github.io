@@ -202,6 +202,19 @@
     },
     {
       "info": {
+        "name": "Claude Sonnet 4.5",
+        "size": "-",
+        "date": "2025-09-29",
+        "type": "proprietary",
+        "link": "https://www.anthropic.com/news/claude-sonnet-4-5"
+      },
+      "validation": {
+        "overall": "77.8",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Claude Sonnet 4",
         "size": "-",
         "date": "2025-05-23",
@@ -396,6 +409,62 @@
       },
       "pro": {
         "overall": "70.1",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Qwen3-VL 235B-A22B",
+        "size": "22B",
+        "date": "2025-09-22",
+        "type": "open_source",
+        "link": "https://qwen.ai/blog?id=99f0335c4ad9ff6153e517418d48535ab6d8afef&from=research.latest-advancements-list"
+      },
+      "validation": {
+        "overall": "78.7",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "68.1",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Qianfan-VL-3B",
+        "size": "3B",
+        "date": "2025-09-16",
+        "type": "open_source",
+        "link": "https://baidubce.github.io/Qianfan-VL/index_en.html"
+      },
+      "validation": {
+        "overall": "46.4",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Qianfan-VL-8B",
+        "size": "8B",
+        "date": "2025-09-16",
+        "type": "open_source",
+        "link": "https://baidubce.github.io/Qianfan-VL/index_en.html"
+      },
+      "validation": {
+        "overall": "47.1",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Qianfan-VL-70B",
+        "size": "70B",
+        "date": "2025-09-16",
+        "type": "open_source",
+        "link": "https://baidubce.github.io/Qianfan-VL/index_en.html"
+      },
+      "validation": {
+        "overall": "58.3",
         "source": "author"
       }
     },
