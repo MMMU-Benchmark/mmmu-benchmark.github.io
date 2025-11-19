@@ -68,6 +68,23 @@
     },
     {
       "info": {
+        "name": "GPT-5.1",
+        "size": "-",
+        "date": "2025-11-13",
+        "type": "proprietary",
+        "link": "https://openai.com/index/gpt-5-1-for-developers/"
+      },
+      "validation": {
+        "overall": "85.4",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "76.0",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "GPT-5 w/ thinking",
         "size": "-",
         "date": "2025-08-07",
@@ -284,6 +301,19 @@
     },
     {
       "info": {
+        "name": "Gemini 3.0 Pro",
+        "size": "-",
+        "date": "2025-11-18",
+        "type": "proprietary",
+        "link": "https://blog.google/products/gemini/gemini-3/#gemini-3"
+      },
+      "pro": {
+        "overall": "81.0",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Gemini 2.0 Flash-Lite",
         "size": "-",
         "date": "2025-02-05",
@@ -344,6 +374,10 @@
       },
       "validation": {
         "overall": "79.6",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "68.0",
         "source": "author"
       }
     },
