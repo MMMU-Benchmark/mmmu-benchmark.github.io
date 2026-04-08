@@ -448,6 +448,19 @@
     },
     {
       "info": {
+        "name": "Claude Sonnet 4.5 w/o tools",
+        "size": "-",
+        "date": "2025-09-29",
+        "type": "proprietary",
+        "link": "https://www.anthropic.com/news/claude-sonnet-4-5"
+      },
+      "pro": {
+        "overall": "63.4",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "Claude Sonnet 4",
         "size": "-",
         "date": "2025-05-23",
