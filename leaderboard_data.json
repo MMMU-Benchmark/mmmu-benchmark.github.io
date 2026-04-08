@@ -68,6 +68,201 @@
     },
     {
       "info": {
+        "name": "Muse Spark Thinking",
+        "size": "-",
+        "date": "2026-04-08",
+        "type": "proprietary",
+        "link": "https://ai.meta.com/blog/introducing-muse-spark-msl/"
+      },
+      "pro": {
+        "overall": "80.4",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Claude Opus 4.6 w/o tools",
+        "size": "-",
+        "date": "2026-02-05",
+        "type": "proprietary",
+        "link": "https://www.anthropic.com/news/claude-opus-4-6"
+      },
+      "pro": {
+        "overall": "73.9",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Claude Opus 4.6 w/ tools",
+        "size": "-",
+        "date": "2026-02-05",
+        "type": "proprietary",
+        "link": "https://www.anthropic.com/news/claude-opus-4-6"
+      },
+      "pro": {
+        "overall": "77.3",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Claude Sonnet 4.6 w/o tools",
+        "size": "-",
+        "date": "2026-02-17",
+        "type": "proprietary",
+        "link": "https://www.anthropic.com/news/claude-sonnet-4-6"
+      },
+      "pro": {
+        "overall": "74.5",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Claude Sonnet 4.6 w/ tools",
+        "size": "-",
+        "date": "2026-02-17",
+        "type": "proprietary",
+        "link": "https://www.anthropic.com/news/claude-sonnet-4-6"
+      },
+      "pro": {
+        "overall": "75.6",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "GPT-5.4 Thinking w/o tools",
+        "size": "-",
+        "date": "2026-03-05",
+        "type": "proprietary",
+        "link": "https://openai.com/index/introducing-gpt-5-4/"
+      },
+      "pro": {
+        "overall": "81.2",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "GPT-5.4 Thinking w/ tools",
+        "size": "-",
+        "date": "2026-03-05",
+        "type": "proprietary",
+        "link": "https://openai.com/index/introducing-gpt-5-4/"
+      },
+      "pro": {
+        "overall": "82.1",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "GPT-5.2 Thinking w/o tools",
+        "size": "-",
+        "date": "2025-12-11",
+        "type": "proprietary",
+        "link": "https://openai.com/index/introducing-gpt-5-2/"
+      },
+      "pro": {
+        "overall": "79.5",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "GPT-5.2 Thinking w/o Python",
+        "size": "-",
+        "date": "2025-12-11",
+        "type": "proprietary",
+        "link": "https://openai.com/index/introducing-gpt-5-2/"
+      },
+      "pro": {
+        "overall": "80.4",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "GPT-5.1 Thinking",
+        "size": "-",
+        "date": "2025-11-13",
+        "type": "proprietary",
+        "link": "https://openai.com/index/gpt-5-1-for-developers/"
+      },
+      "pro": {
+        "overall": "79.0",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Gemini 3.1 Pro Thinking (High)",
+        "size": "-",
+        "date": "2026-02-19",
+        "type": "proprietary",
+        "link": "https://deepmind.google/models/gemini/pro/"
+      },
+      "pro": {
+        "overall": "80.5",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Gemma 4 31B",
+        "size": "31B",
+        "date": "2026-04-02",
+        "type": "open_source",
+        "link": "https://deepmind.google/models/gemma/gemma-4/"
+      },
+      "pro": {
+        "overall": "76.9",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Gemma 4 26B A4B",
+        "size": "26B",
+        "date": "2026-04-02",
+        "type": "open_source",
+        "link": "https://deepmind.google/models/gemma/gemma-4/"
+      },
+      "pro": {
+        "overall": "73.8",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Gemma 4 E4B",
+        "size": "4B",
+        "date": "2026-04-02",
+        "type": "open_source",
+        "link": "https://deepmind.google/models/gemma/gemma-4/"
+      },
+      "pro": {
+        "overall": "52.6",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
+        "name": "Gemma 4 E2B",
+        "size": "2B",
+        "date": "2026-04-02",
+        "type": "open_source",
+        "link": "https://deepmind.google/models/gemma/gemma-4/"
+      },
+      "pro": {
+        "overall": "44.2",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "GPT-5.1",
         "size": "-",
         "date": "2025-11-13",
@@ -228,6 +423,10 @@
       "validation": {
         "overall": "80.7",
         "source": "author"
+      },
+      "pro": {
+        "overall": "73.9",
+        "source": "author"
       }
     },
     {
@@ -240,6 +439,10 @@
       },
       "validation": {
         "overall": "77.8",
+        "source": "author"
+      },
+      "pro": {
+        "overall": "68.9",
         "source": "author"
       }
     },
@@ -2294,7 +2497,7 @@
     },
     {
       "info": {
-        "name": "Gemma3-4B",
+        "name": "Gemma 3-4B",
         "size": "4B",
         "date": "2025-03-12",
         "type": "open_source",
@@ -2307,7 +2510,7 @@
     },
     {
       "info": {
-        "name": "Gemma3-12B",
+        "name": "Gemma 3-12B",
         "size": "12B",
         "date": "2025-03-12",
         "type": "open_source",
@@ -2320,7 +2523,7 @@
     },
     {
       "info": {
-        "name": "Gemma3-27B",
+        "name": "Gemma 3-27B",
         "size": "27B",
         "date": "2025-03-12",
         "type": "open_source",
@@ -2509,7 +2712,7 @@
         "source": "author"
       },
       "pro": {
-        "vision": "25.3",
+        "overall": "25.3",
         "source": "author"
       }
     },
@@ -2871,7 +3074,7 @@
         "source": "author"
       },
       "pro": {
-        "vision": "43.8",
+        "overall": "43.8",
         "source": "author"
       }
     },
