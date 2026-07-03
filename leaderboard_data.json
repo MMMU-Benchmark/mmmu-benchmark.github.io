@@ -660,6 +660,21 @@
     },
     {
       "info": {
+        "name": "Chance Vision 1.5",
+        "size": "-",
+        "date": "2026-07-01",
+        "type": "proprietary",
+        "link": "https://www.chance.vision/"
+      },
+      "pro": {
+        "overall": "86.9",
+        "vision": "86.1",
+        "original": "87.6",
+        "source": "author"
+      }
+    },
+    {
+      "info": {
         "name": "dots.vlm1",
         "size": "37B",
         "date": "2025-08-05",
